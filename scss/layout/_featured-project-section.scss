@@ -86,6 +86,14 @@
   }
 }
 
+#featured-project__tasks-and-playbooks {
+  @include gradient($plum, $lavender);
+
+  .featured-project-button {
+    color: $plum;
+  }
+}
+
 .featured-project-text {
   @include vertical-align();
   z-index: 50;
@@ -111,6 +119,7 @@
 .featured-project-button {
   background: $white;
   margin: 45px 0 0 360px;
+  text-decoration: none;
 }
 
 .featured-project-image {

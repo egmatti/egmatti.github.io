@@ -503,7 +503,8 @@ p, .project-page .project-image--medium-width figcaption, .project-page .project
     box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25); }
 
 a {
-  outline: none; }
+  outline: none;
+  text-decoration: none; }
 
 .text-link {
   color: #00CED1;
@@ -1112,6 +1113,14 @@ footer {
   #featured-project__campaign-results .featured-project-button {
     color: #4357AD; }
 
+#featured-project__tasks-and-playbooks {
+  background: -moz-linear-gradient(-45deg, #963484 0%, #966888 100%);
+  background: -webkit-linear-gradient(-45deg, #963484 0%, #966888 100%);
+  background: linear-gradient(135deg, #963484 0%, #966888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 ); }
+  #featured-project__tasks-and-playbooks .featured-project-button {
+    color: #963484; }
+
 .featured-project-text {
   position: relative;
   top: 50%;
@@ -1136,7 +1145,8 @@ footer {
 
 .featured-project-button {
   background: #ffffff;
-  margin: 45px 0 0 360px; }
+  margin: 45px 0 0 360px;
+  text-decoration: none; }
 
 .featured-project-image {
   height: 100%;
