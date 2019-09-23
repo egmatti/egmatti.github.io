@@ -95,6 +95,7 @@
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(8, 12.5%);
+  margin: 0 auto;
   max-width: 1440px;
   width: 100%;
 }

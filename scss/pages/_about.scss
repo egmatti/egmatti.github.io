@@ -1,0 +1,18 @@
+// ==========================================
+// ABOUT PAGE
+// ==========================================
+
+#about-page .hero-section {
+  @include grid-parent();
+  margin-top: 45px;
+
+  img {
+    @include grid-child(5,8);
+    object-fit: contain;
+    width: 540px;
+  }
+}
+
+#about-page .hero-text {
+  width: 650px;
+}
