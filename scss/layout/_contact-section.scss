@@ -1,0 +1,21 @@
+// ==========================================
+// CONTACT SECTION
+// ==========================================
+
+.contact-section {
+  @include grid-parent();
+  margin-bottom: 135px;
+}
+
+.contact-text {
+  @include grid-child(3,7);
+
+  h5 {
+    line-height: normal;
+    margin-bottom: 22px;
+  }
+}
+
+.contact-text .text-link {
+  margin-top: 22px;
+}

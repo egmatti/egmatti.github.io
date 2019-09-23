@@ -1,0 +1,33 @@
+// ==========================================
+// HERO BACKGROUND
+// ==========================================
+
+.hero-background {
+  bottom: 0;
+  -webkit-clip-path: ellipse(87.5% 50% at 50% 40%);
+  clip-path: ellipse(92.5% 50% at 50% 40%);
+  height: 700px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: -100;
+}
+
+.hero-background-video {
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  @include media-query(small) {
+    display: none;
+  }
+
+  @include media-query(medium) {
+    display: none;
+  }
+}

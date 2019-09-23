@@ -1,0 +1,15 @@
+// ==========================================
+// CAMPAIGN RESULTS PROJECT PAGE
+// ==========================================
+
+#campaign-results-page .hero-background {
+  @include gradient($royal-blue, $baby-blue);
+}
+
+#campaign-results-page .project-role__label {
+   color: $royal-blue;
+}
+
+#campaign-results-page blockquote span {
+  color: $royal-blue;
+}

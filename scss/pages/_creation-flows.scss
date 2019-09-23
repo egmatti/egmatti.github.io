@@ -1,0 +1,15 @@
+// ==========================================
+// CREATION FLOWS PROJECT PAGE
+// ==========================================
+
+#creation-flows-page .hero-background {
+  @include gradient($red, $peach);
+}
+
+#creation-flows-page .project-role__label {
+   color: $red;
+}
+
+#creation-flows-page blockquote span {
+  color: $red;
+}

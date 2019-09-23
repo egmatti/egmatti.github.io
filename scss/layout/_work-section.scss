@@ -1,0 +1,171 @@
+// ==========================================
+// WORK SECTION
+// ==========================================
+
+.work-section {
+  margin: 135px 0;
+  position: relative;
+}
+
+.work-section .section-title {
+  line-height: normal;
+  margin-left: 12.5%;
+}
+
+.projects-grid {
+  @include grid-parent();
+  grid-template-rows: repeat(2, 50%);
+  height: 720px;
+  margin-top: 60px;
+}
+
+.projects-grid a {
+  text-decoration: none;
+}
+
+.project {
+  align-items: center;
+  background: rgba($white, 0);
+  cursor: pointer;
+  display: flex;
+
+  &:hover {
+    @include box-shadow();
+  }
+
+  &:hover .project-name {
+    color: $white;
+  }
+
+  &:hover .project-title {
+    color: $white;
+  }
+
+  &:hover .project-link {
+    color: $white !important;
+
+    &:after {
+      content: url('../img/icons/text-link-arrows/text-link-arrow-white.svg') !important;
+      margin-left: 13.25px;
+    }
+  }
+}
+
+.project-text {
+  margin: 0 45px;
+}
+
+.project-name {
+  color: $medium-gray;
+  font-family: $font-medium;
+  font-size: 16px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.project-title {
+  color: $black;
+  margin: 22.5px 0 33.75px 0;
+}
+
+#project-one {
+  @include grid-child(2,4);
+  grid-row: 1/2;
+
+  &:hover {
+    @include gradient($red, $peach);
+  }
+}
+
+#project-one .project-link {
+  color: $red;
+
+  &:after {
+    content: url('../img/icons/text-link-arrows/text-link-arrow-red.svg');
+  }
+}
+
+#project-two {
+  @include grid-child(4,6);
+  grid-row: 1/2;
+
+  &:hover {
+    @include gradient($royal-blue, $baby-blue);
+  }
+}
+
+#project-two .project-link {
+  color: $royal-blue;
+
+  &:after {
+    content: url('../img/icons/text-link-arrows/text-link-arrow-royal-blue.svg');
+  }
+}
+
+#project-three {
+  @include grid-child(6,8);
+  grid-row: 1/2;
+
+  &:hover {
+    @include gradient($plum, $lavender);
+  }
+}
+
+#project-three .project-link {
+  color: $plum;
+
+  &:after {
+    content: url('../img/icons/text-link-arrows/text-link-arrow-plum.svg');
+  }
+}
+
+#project-four {
+  @include grid-child(2,4);
+  grid-row: 2/3;
+
+  &:hover {
+    @include gradient($kelly-green, $lime-green);
+  }
+}
+
+#project-four .project-link {
+  color: $kelly-green;
+
+  &:after {
+    content: url('../img/icons/text-link-arrows/text-link-arrow-kelly-green.svg');
+  }
+}
+
+#project-five {
+  @include grid-child(4,6);
+  grid-row: 2/3;
+
+  &:hover {
+    @include gradient($burnt-orange, $tangerine);
+  }
+}
+
+#project-five .project-link {
+  color: $burnt-orange;
+
+  &:after {
+    content: url('../img/icons/text-link-arrows/text-link-arrow-burnt-orange.svg');
+  }
+}
+
+#project-six {
+  @include grid-child(6,8);
+  grid-row: 2/3;
+
+  &:hover {
+    @include gradient($sky-blue, $aqua);
+  }
+}
+
+#project-six .project-link {
+  color: $sky-blue;
+
+  &:after {
+    content: url('../img/icons/text-link-arrows/text-link-arrow-sky-blue.svg');
+  }
+}

@@ -1,0 +1,84 @@
+// ==========================================
+// VARIABLES
+// ==========================================
+
+// COLORS
+
+// Color Descriptions
+$white: #ffffff;
+$black: #121212;
+$dark-gray: #484848;
+$medium-gray: #898989;
+$light-gray: #E3E3E3;
+$lightest-gray: #F6F6F6;
+$sky-blue: #009ACD;
+$sky-blue--lightened: #B3E1F0;
+$sky-blue--darkened: #0088C1;
+$aqua: #00CED1;
+$aqua--darkened: #00C2C6;
+$red: #E84855;
+$peach: #E87C59;
+$royal-blue: #4357AD;
+$baby-blue: #438BB1;
+$plum: #963484;
+$lavender: #966888;
+$kelly-green: #60D394;
+$lime-green: #60FF98;
+$burnt-orange: #F06543;
+$tangerine: #F09947;
+
+
+// Color Functions
+$color-footer: $black;
+$color-full-width-image-background: $lightest-gray;
+$color-divider: $aqua;
+$color-nav: $sky-blue;
+$color-nav--hover: $sky-blue--darkened;
+$color-headline: $black;
+$color-body-text: $dark-gray;
+$color-selection: $sky-blue--lightened;
+$color-text-link: $aqua;
+$color-text-link--hover: $aqua--darkened;
+$color-box-shadow: rgba($black, 0.25);
+
+
+// FONTS
+
+// Fonts
+$font-thin: "Metropolis Thin", Helvetica, sans-serif;
+$font-thin: "Metropolis Extra Light", Helvetica, sans-serif;
+$font-light: "Metropolis Light", Helvetica, sans-serif;
+$font-regular: "Metropolis Regular", Helvetica, sans-serif;
+$font-medium: "Metropolis Medium", Helvetica, sans-serif;
+$font-semi-bold: "Metropolis Semi-Bold", Helvetica, sans-serif;
+$font-bold: "Metropolis Bold", Helvetica, sans-serif;
+$font-extra-bold: "Metropolis Extra Bold", Helvetica, sans-serif;
+
+
+// Font Sizes
+$base-font-size: 18px;
+
+
+// Line Height
+$base-line-height: 27px;
+
+
+// BORDERS
+
+
+// MARGINS AND PADDING
+
+
+// HEIGHTS AND WIDTHS
+
+
+// PATHS
+
+$path-image: "../img";
+
+
+// BREAKPOINTS
+
+$breakpoint-small: 0px;
+$breakpoint-medium: 767px;
+$breakpoint-large: 1025px;

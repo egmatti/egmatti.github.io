@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="299px" height="60px" viewBox="0 0 299 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>Logo - Half White</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop-Mockups" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Page" transform="translate(-55.000000, -65.000000)">
+            <g id="Header" transform="translate(55.000000, 65.000000)">
+                <g id="Logo---Half-White">
+                    <g id="Logo">
+                        <text id="Design" font-family="Metropolis-Medium, Metropolis" font-size="19.9791122" font-weight="400" letter-spacing="1.77592112" fill="#009ACD">
+                            <tspan x="215.182649" y="58.8165609">DESIGN</tspan>
+                        </text>
+                        <text id="Emily-Mattison" font-family="Metropolis-Bold, Metropolis" font-size="32.1092875" font-weight="bold" letter-spacing="-1.13720391" fill="#FFFFFF">
+                            <tspan x="82" y="36">Emily Mattiso</tspan>
+                            <tspan x="280.646783" y="36">n</tspan>
+                        </text>
+                        <g stroke="#222222" stroke-width="1.07030958">
+                            <g id="E" transform="translate(22.735203, 22.976975) rotate(45.000000) translate(-22.735203, -22.976975) translate(8.735203, 4.976975)">
+                                <rect id="Rectangle" fill="#00ABCE" x="0.803006625" y="28.6395108" width="25.7148738" height="5.95577942"></rect>
+                                <rect id="Rectangle" fill="#00ABCE" x="0.803006625" y="0.535154791" width="23.5720591" height="5.95577942"></rect>
+                                <rect id="Rectangle" fill="#00ABCE" x="0.803006625" y="14.5873328" width="23.5720591" height="5.95577942"></rect>
+                                <path d="M-13.280142,14.6183035 L-13.280142,20.5121416 L20.7799934,20.5121416 L20.7799934,14.6183035 L-13.280142,14.6183035 Z" id="Rectangle" fill="#009ACD" transform="translate(3.749926, 17.565223) rotate(90.000000) translate(-3.749926, -17.565223) "></path>
+                            </g>
+                            <g id="M" transform="translate(48.188396, 27.563409) scale(-1, -1) rotate(45.000000) translate(-48.188396, -27.563409) translate(34.188396, 9.563409)">
+                                <rect id="Rectangle" fill="#00BDD0" x="0.803006625" y="28.6395108" width="25.7148738" height="5.95577942"></rect>
+                                <rect id="Rectangle" fill="#00BDD0" x="0.803006625" y="0.535154791" width="23.5720591" height="5.95577942"></rect>
+                                <rect id="Rectangle" fill="#00BDD0" x="0.803006625" y="14.5873328" width="23.5720591" height="5.95577942"></rect>
+                                <path d="M-13.280142,14.6183035 L-13.280142,20.5121416 L20.7799934,20.5121416 L20.7799934,14.6183035 L-13.280142,14.6183035 Z" id="Rectangle" fill="#00CED1" transform="translate(3.749926, 17.565223) rotate(90.000000) translate(-3.749926, -17.565223) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

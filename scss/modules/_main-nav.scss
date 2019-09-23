@@ -1,0 +1,56 @@
+// ==========================================
+// MAIN NAV
+// ==========================================
+
+.main-nav {
+  a {
+    border-bottom: solid 2.5px transparent;
+    color: $color-nav;
+    display: inline-block;
+    padding: 8px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    li {
+      font-family: $font-medium;
+      font-size: 16px;
+      letter-spacing: 1.4px;
+      list-style-type: none;
+    }
+
+    &:hover {
+      color: $color-nav--hover;
+      cursor: pointer;
+      padding: 8px 0;
+    }
+
+    &:not(:first-of-type) {
+      margin-left: 60px;
+    }
+  }
+}
+
+.project-page .main-nav {
+  a {
+    color: $white;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+#work-page #main-nav__work {
+  border-bottom: solid 2.5px $color-nav--hover;
+  color: $color-nav--hover;
+}
+
+#about-page #main-nav__about {
+  border-bottom: solid 2.5px $color-nav--hover;
+  color: $color-nav--hover;
+}
+
+#contact-page #main-nav__contact {
+  border-bottom: solid 2.5px $color-nav--hover;
+  color: $color-nav--hover;
+}

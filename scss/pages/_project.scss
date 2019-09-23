@@ -1,0 +1,173 @@
+// ==========================================
+// PROJECT PAGES
+// ==========================================
+
+.project-page .hero-section {
+  height: auto;
+  width: 100%;
+}
+
+.project-page .hero-text {
+  @include grid-parent();
+  grid-template-columns: 12.5% 6.25% 6.25% 12.5% 12.5% 12.5% 12.5% 6.25% 6.25% 12.5%;
+  margin-top: 75px;
+  width: 100%;
+}
+
+.project-page .hero-section .project-name {
+  @include grid-child(3,6);
+  color: $white;
+  font-size: 21px;
+  letter-spacing: 1.8375px;
+}
+
+.project-page .hero-section .project-title {
+  @include grid-child(4,8);
+  color: $white;
+  margin: 32.25px 0 56.25px 0;
+}
+
+.project-page .project-hero-image {
+  @include grid-child(2,10);
+  max-width: 1080px;
+  object-fit: contain;
+  // transform: scale(1.0525);
+  width: 100%;
+}
+
+.project-page .project-section  {
+  margin-top: 135px;
+  width: 100%;
+}
+
+.project-page .background-section {
+  position: relative;
+}
+
+.project-page .project-section-text {
+  @include grid-parent();
+}
+
+.project-page .project-section-name {
+  @include grid-child(2,7);
+  @extend .project-name;
+  color: $medium-gray;
+  font-size: 20px;
+  letter-spacing: 1.75px;
+}
+
+.project-page .project-section-title {
+  @include grid-child(2,7);
+  margin: 33.75px 0 45px 0;
+}
+
+.project-page .project-section-text p {
+  @include grid-child(3,7);
+
+  &:not(:first-of-type) {
+    margin-top: 37.5px;
+  }
+}
+
+.project-page .project-role {
+   @include grid-child(7,9);
+   left: 75%;
+   position: absolute;
+   top: 0;
+
+   @include e(label) {
+     display: block;
+     font-family: $font-medium;
+     font-size: 16px;
+     letter-spacing: 1.4px;
+     margin-bottom: 16.875px;
+     text-transform: uppercase;
+   }
+
+   @include e(description) {
+     @extend p;
+     display: block;
+     font-size: 16px;
+     line-height: 24px;
+   }
+}
+
+.project-page .process-section .project-section-title {
+  margin: 33.75px 0 67.5px 0;
+}
+
+.project-page .project-subsection-text {
+  @include grid-parent();
+  position: relative;
+}
+
+.project-page .project-subsection-one:before {
+  @include grid-child(2,3);
+  content: url('../img/projects/subsection-numbers/subsection-one.svg');
+  position: absolute;
+}
+
+.project-page .project-subsection-two:before {
+  @include grid-child(2,3);
+  content: url('../img/projects/subsection-numbers/subsection-two.svg');
+  position: absolute;
+}
+
+.project-page .project-subsection-three:before {
+  @include grid-child(2,3);
+  content: url('../img/projects/subsection-numbers/subsection-three.svg');
+  position: absolute;
+}
+
+.project-page .project-subsection-four:before {
+  @include grid-child(2,3);
+  content: url('../img/projects/subsection-numbers/subsection-four.svg');
+  position: absolute;
+}
+
+.project-page .project-subsection-name {
+  @include grid-child(3,7);
+  margin-bottom: 33.75px;
+}
+
+.project-page .project-subsection-text p {
+  @include grid-child(3,7);
+
+  &:not(:first-of-type) {
+    margin-top: 37.5px;
+  }
+}
+
+.project-page .project-subsection-text ol {
+  @include grid-child(3,7);
+  @extend p;
+  counter-reset: li;
+  margin: 37.5px 0 0 0;
+	padding-left: 0;
+
+  li {
+    list-style: none;
+	  margin: 0 0 0 1.5em;
+	  padding-bottom: 11.25px;
+    position: relative;
+
+    &:before {
+      -moz-box-sizing: border-box;
+    	-webkit-box-sizing: border-box;
+    	box-sizing: border-box;
+      content:counter(li)'.';
+    	counter-increment:li;
+      left: -2em;
+      margin-right: 10px;
+    	padding: 4px;
+    	position: absolute;
+      text-align:center;
+    	top: -4.75px;
+    	width: 2em;
+    }
+  }
+}
+
+.project-page .work-section {
+  margin: 180px 0 135px 0;
+}

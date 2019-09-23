@@ -1,0 +1,32 @@
+// ==========================================
+// LINKS
+// ==========================================
+
+a {
+  outline: none;
+}
+
+.text-link {
+  color: $color-text-link;
+  cursor: pointer;
+  display: block;
+  font-family: $font-medium;
+  font-size: $base-font-size;
+  position: relative;
+
+  &:after {
+    content: url('../img/icons/text-link-arrows/text-link-arrow.svg');
+    margin-left: 11.25px;
+    position: absolute;
+    top: 1.25px;
+  }
+
+  &:hover {
+    color: $color-text-link--hover;
+  }
+
+  &:hover:after {
+    content: url('../img/icons/text-link-arrows/text-link-arrow-darkened.svg');
+    margin-left: 13.25px;
+  }
+}

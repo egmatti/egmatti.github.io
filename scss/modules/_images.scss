@@ -1,0 +1,255 @@
+// ==========================================
+// IMAGES
+// ==========================================
+
+.project-page .project-image--medium-width {
+  @include grid-parent();
+  grid-template-columns: 12.5% 6.25% 6.25% 12.5% 12.5% 12.5% 12.5% 6.25% 6.25% 12.5%;
+  margin: 67.5px 0;
+
+  img {
+    @include box-shadow();
+    @include grid-child(3,9);
+    display: block;
+    max-width: 900px;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  figcaption {
+    @include grid-child(3,9);
+    @extend p;
+    display: block;
+    font-size: 14px;
+    margin-top: 33.75px;
+    text-align: center;
+  }
+}
+
+.project-page .project-image--full-width {
+  background: $color-full-width-image-background;
+  box-sizing: border-box;
+  height: auto;
+  margin: 90px 0;
+  padding: 67.5px 180px 56.25px 180px;
+  width: 100%;
+
+  h6 {
+    margin-bottom: 45px;
+
+    &:not(:first-of-type) {
+      margin-top: 56.25px;
+    }
+  }
+
+  figcaption {
+    @extend p;
+    display: block;
+    font-size: 14px;
+    margin-top: 33.75px;
+    text-align: center;
+  }
+}
+
+.project-page .heuristic-evaluation {
+  @include flexbox($align: flex-start, $justify: space-between);
+  width: 100%;
+
+  @include m(screenshot) {
+    @include box-shadow();
+    object-fit: contain;
+    width: 60%;
+  }
+
+  @include m(comments) {
+    object-fit: contain;
+    width: 35.648%;
+  }
+}
+
+.project-page .one-image-layout {
+  @include flexbox($align: flex-start);
+  width: 100%;
+
+  img {
+    @include box-shadow();
+    object-fit: contain;
+    width: 46.875%;
+  }
+}
+
+.project-page .two-image-layout {
+  @include flexbox($align: flex-start, $justify: space-between);
+  width: 100%;
+
+  img {
+    @include box-shadow();
+    object-fit: contain;
+    width: 46.875%;
+  }
+}
+
+.project-page .three-image-layout {
+  @include flexbox($align: flex-start, $justify: space-between);
+  width: 100%;
+
+  img {
+    @include box-shadow();
+    object-fit: contain;
+    width: 30.55%;
+  }
+}
+
+.project-page .four-image-layout {
+  @include flexbox($align: flex-start, $justify: space-between, $wrap: wrap);
+  width: 100%;
+
+  img {
+    @include box-shadow();
+    object-fit: contain;
+    width: 46.875%;
+
+    &:not(:nth-of-type(1)) {
+      margin-top: 45px;
+    }
+
+    &:not(:nth-of-type(2)) {
+      margin-top: 45px;
+    }
+  }
+}
+
+.project-page .six-image-layout {
+  @include flexbox($align: flex-start, $justify: space-between, $wrap: wrap);
+  width: 100%;
+
+  img {
+    @include box-shadow();
+    object-fit: contain;
+    width: 46.875%;
+
+    &:nth-of-type(3) {
+      margin-top: 45px;
+    }
+
+    &:nth-of-type(4) {
+      margin-top: 45px;
+    }
+
+    &:nth-of-type(5) {
+      margin-top: 45px;
+    }
+
+    &:nth-of-type(6) {
+      margin-top: 45px;
+    }
+  }
+}
+
+.project-page .two-column-layout {
+  @include flexbox($align: flex-start, $justify: space-between);
+  width: 100%;
+
+  @include e(column) {
+    height: auto;
+    width: 45.83%;
+  }
+}
+
+.project-page .three-column-layout {
+  @include flexbox($align: flex-start, $justify: space-between);
+  width: 100%;
+
+  @include e(column) {
+    height: auto;
+    width: auto;
+  }
+}
+
+.job-story {
+  margin-bottom: 33.75px;
+
+  &:last-of-type {
+    margin-bottom: 11.25px;
+  }
+
+  span {
+    display: block;
+    font-family: $font-bold;
+    font-size: 14px;
+    margin-bottom: 7.5px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.approach {
+  width: 100%;
+
+  span {
+    display: block;
+    font-family: $font-bold;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  ul li {
+    @extend p;
+    font-size: 14px;
+    list-style: none;
+    margin: 0 0 0 1.5em;
+    padding-bottom: 4.85px;
+    position: relative;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+
+    &:before {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      content:'•';
+      left: -2em;
+      margin-right: 10px;
+      padding: 4px;
+      position: absolute;
+      text-align:center;
+      top: -4.75px;
+      width: 2em;
+    }
+
+    ul li {
+      &:first-of-type {
+        padding-top: 4.85px;
+      }
+
+      &:before {
+        content:'-';
+      }
+    }
+  }
+}
+
+.column--concept-model {
+  width: auto !important;
+}
+
+.concept-model {
+  width: 100%;
+
+  span {
+    display: block;
+    font-family: $font-bold;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+
+  img {
+    height: 300px;
+    object-fit: contain;
+  }
+}

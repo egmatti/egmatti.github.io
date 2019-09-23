@@ -1,0 +1,17 @@
+// ==========================================
+// BUTTONS
+// ==========================================
+
+.button {
+  @include box-shadow($c: rgba($black, 0.1));
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $font-medium;
+  font-size: 16px;
+  padding: 10px 18px;
+
+  &:hover {
+    @include box-shadow($c: rgba($black, 0.25));
+  }
+}

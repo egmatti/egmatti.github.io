@@ -1,0 +1,124 @@
+// ==========================================
+// BASE
+// ==========================================
+
+* {
+  margin: 0;
+  padding: 0;
+
+  ::-moz-selection {
+    background: $color-selection;
+    text-shadow: none;
+  }
+
+  ::selection {
+    background: $color-selection;
+    text-shadow: none;
+  }
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+.hidden {
+ display: none !important;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+
+// HEADLINES
+
+h1 {
+  color: $color-headline;
+  font-family: $font-bold;
+  font-size: 48px;
+  line-height: 64px;
+  margin: 0;
+}
+
+h2 {
+  color: $color-headline;
+  font-family: $font-bold;
+  font-size: 42px;
+  line-height: 56px;
+  margin: 0;
+}
+
+h3 {
+  color: $color-headline;
+  font-family: $font-bold;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+h4 {
+  color: $color-headline;
+  font-family: $font-bold;
+  font-size: 33px;
+  line-height: 44px;
+}
+
+h5 {
+  color: $color-headline;
+  font-family: $font-bold;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+h6 {
+  color: $color-headline;
+  font-family: $font-bold;
+  font-size: 21px;
+  line-height: 28px;
+}
+
+
+// BODY TEXT
+
+p {
+  color: $color-body-text;
+  font-family: $font-regular;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}

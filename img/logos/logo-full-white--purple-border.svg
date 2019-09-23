@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="299px" height="60px" viewBox="0 0 299 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Logo - White</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Final-Project-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UserIQ-Tasks-&amp;-Playbooks-Project" transform="translate(-55.000000, -65.000000)" fill="#FFFFFF">
+            <g id="Header---White" transform="translate(55.000000, 65.000000)">
+                <g id="Header">
+                    <g id="Logo---White">
+                        <g id="Logo">
+                            <text id="Design" font-family="Metropolis-Medium, Metropolis" font-size="19.9791122" font-weight="400" letter-spacing="1.77592112">
+                                <tspan x="215.182649" y="58.8165609">DESIGN</tspan>
+                            </text>
+                            <text id="Emily-Mattison" font-family="Metropolis-Bold, Metropolis" font-size="32.1092875" font-weight="bold" letter-spacing="-1.13720391">
+                                <tspan x="82" y="36">Emily Mattiso</tspan>
+                                <tspan x="280.646783" y="36">n</tspan>
+                            </text>
+                            <g stroke-width="1.07030958">
+                                <g>
+                                    <g id="E" transform="translate(22.735203, 22.976975) rotate(45.000000) translate(-22.735203, -22.976975) translate(8.735203, 4.976975)">
+                                        <rect id="Rectangle" stroke="#963884" x="0.803006625" y="28.6395108" width="25.7148738" height="5.95577942"></rect>
+                                        <rect id="Rectangle" stroke="#963884" x="0.803006625" y="0.535154791" width="23.5720591" height="5.95577942"></rect>
+                                        <rect id="Rectangle" stroke="#963784" x="0.803006625" y="14.5873328" width="23.5720591" height="5.95577942"></rect>
+                                        <path d="M-13.280142,14.6183035 L-13.280142,20.5121416 L20.7799934,20.5121416 L20.7799934,14.6183035 L-13.280142,14.6183035 Z" id="Rectangle" stroke="#963885" transform="translate(3.749926, 17.565223) rotate(90.000000) translate(-3.749926, -17.565223) "></path>
+                                    </g>
+                                    <g id="M" transform="translate(48.188396, 27.563409) scale(-1, -1) rotate(45.000000) translate(-48.188396, -27.563409) translate(34.188396, 9.563409)">
+                                        <rect id="Rectangle" stroke="#963984" x="0.803006625" y="28.6395108" width="25.7148738" height="5.95577942"></rect>
+                                        <rect id="Rectangle" stroke="#963884" x="0.803006625" y="0.535154791" width="23.5720591" height="5.95577942"></rect>
+                                        <rect id="Rectangle" stroke="#963884" x="0.803006625" y="14.5873328" width="23.5720591" height="5.95577942"></rect>
+                                        <path d="M-13.280142,14.6183035 L-13.280142,20.5121416 L20.7799934,20.5121416 L20.7799934,14.6183035 L-13.280142,14.6183035 Z" id="Rectangle" stroke="#963884" transform="translate(3.749926, 17.565223) rotate(90.000000) translate(-3.749926, -17.565223) "></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,156 @@
+// ==========================================
+// TYPE
+// ==========================================
+
+@font-face {
+  font-family: "Metropolis Black";
+  src: url("../fonts/Metropolis-Black.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-Black.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-Black.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-Black.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-Black.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Metropolis Black Italic";
+  src: url("../fonts/Metropolis-BlackItalic.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-BlackItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-BlackItalic.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-BlackItalic.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-BlackItalic.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Metropolis Bold";
+  src: url("../fonts/Metropolis-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-Bold.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-Bold.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-Bold.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Metropolis Bold Italic";
+  src: url("../fonts/Metropolis-BoldItalic.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-BoldItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-BoldItalic.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-BoldItalic.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-BoldItalic.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Metropolis Extra Bold";
+  src: url("../fonts/Metropolis-ExtraBold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-ExtraBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-ExtraBold.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-ExtraBold.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-ExtraBold.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Metropolis Extra Bold Italic";
+  src: url("../fonts/Metropolis-ExtraBoldItalic.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-ExtraBoldItalic.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-ExtraBoldItalic.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-ExtraBoldItalic.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Metropolis Extra Light";
+  src: url("../fonts/Metropolis-ExtraLight.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-ExtraLight.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-ExtraLight.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-ExtraLight.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-ExtraLight.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Metropolis Light";
+  src: url("../fonts/Metropolis-Light.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-Light.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-Light.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-Light.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Metropolis Light Italic";
+  src: url("../fonts/Metropolis-LightItalic.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-LightItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-LightItalic.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-LightItalic.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-LightItalic.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Metropolis Medium";
+  src: url("../fonts/Metropolis-Medium.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-Medium.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-Medium.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-Medium.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Metropolis Medium Italic";
+  src: url("../fonts/Metropolis-MediumItalic.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-MediumItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-MediumItalic.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-MediumItalic.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-MediumItalic.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Metropolis Regular";
+  src: url("../fonts/Metropolis-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-Regular.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-Regular.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-Regular.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Metropolis Regular Italic";
+  src: url("../fonts/Metropolis-RegularItalic.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-RegularItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-RegularItalic.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-RegularItalic.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-RegularItalic.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Metropolis Semi-Bold";
+  src: url("../fonts/Metropolis-SemiBold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-SemiBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-SemiBold.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-SemiBold.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-SemiBold.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Metropolis Semi-Bold Italic";
+  src: url("../fonts/Metropolis-SemiBoldItalic.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-SemiBoldItalic.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-SemiBoldItalic.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-SemiBoldItalic.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Metropolis Thin";
+  src: url("../fonts/Metropolis-Thin.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-Thin.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-Thin.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-Thin.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-Thin.ttf")  format("truetype"), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Metropolis Thin Italic";
+  src: url("../fonts/Metropolis-ThinItalic.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Metropolis-ThinItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/Metropolis-ThinItalic.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/Metropolis-ThinItalic.woff") format("woff"), /* Pretty Modern Browsers */
+       url("../fonts/Metropolis-ThinItalic.ttf")  format("truetype"), /* Safari, Android, iOS */
+}

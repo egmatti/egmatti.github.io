@@ -1,0 +1,15 @@
+// ==========================================
+// TASKS AND PLAYBOOKS PROJECT PAGE
+// ==========================================
+
+#tasks-and-playbooks-page .hero-background {
+  @include gradient($plum, $lavender);
+}
+
+#tasks-and-playbooks-page .project-role__label {
+   color: $plum;
+}
+
+#tasks-and-playbooks-page blockquote span {
+  color: $plum;
+}
