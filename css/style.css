@@ -1036,6 +1036,17 @@ footer {
   #project-six .project-link:after {
     content: url("../img/icons/text-link-arrows/text-link-arrow-sky-blue.svg"); }
 
+.project-placeholder {
+  cursor: default; }
+  .project-placeholder:hover .project-link:after {
+    content: none !important; }
+
+.project-link-placeholder {
+  cursor: default; }
+  .project-link-placeholder:after {
+    content: none !important;
+    cursor: default; }
+
 .featured-project-section {
   width: 100%; }
 
