@@ -28,14 +28,14 @@
     line-height: 30px;
     margin-top: 30px;
   }
-}
 
-#home-page .hero-text__divider {
-  @include grid-child(3,4);
-  background: $color-divider;
-  float: left;
-  height: 5px;
-  margin-top: 35px;
+  @include e(divider) {
+    @include grid-child(3,4);
+    background: $color-divider;
+    float: left;
+    height: 5px;
+    margin-top: 35px;
+  }
 }
 
 #home-page .about-section {

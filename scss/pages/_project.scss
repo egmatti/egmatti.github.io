@@ -65,7 +65,7 @@
   @include grid-child(3,7);
 
   &:not(:first-of-type) {
-    margin-top: 37.5px;
+    margin-top: 28.125px;
   }
 }
 

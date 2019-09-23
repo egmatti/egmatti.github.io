@@ -916,7 +916,7 @@ footer {
     -webkit-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
     -moz-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
     box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25); }
-  .project:hover .project-name, .project:hover .project-page .project-section-name, .project-page .project:hover .project-section-name {
+  .project:hover .project-name, .project:hover .project-page .project-section-name, .project-page .project:hover .project-section-name, .project:hover #about-page .approach-section-name, #about-page .project:hover .approach-section-name {
     color: #ffffff; }
   .project:hover .project-title {
     color: #ffffff; }
@@ -929,7 +929,7 @@ footer {
 .project-text {
   margin: 0 45px; }
 
-.project-name, .project-page .project-section-name {
+.project-name, .project-page .project-section-name, #about-page .approach-section-name {
   color: #898989;
   font-family: "Metropolis Medium", Helvetica, sans-serif;
   font-size: 16px;
@@ -1207,15 +1207,14 @@ footer {
     font-size: 20px;
     line-height: 30px;
     margin-top: 30px; }
-
-#home-page .hero-text__divider {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-  background: #00CED1;
-  float: left;
-  height: 5px;
-  margin-top: 35px; }
+  #home-page .hero-text__divider {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    background: #00CED1;
+    float: left;
+    height: 5px;
+    margin-top: 35px; }
 
 #home-page .about-section {
   display: -ms-grid;
@@ -1249,7 +1248,7 @@ footer {
   margin-top: 75px;
   width: 100%; }
 
-.project-page .hero-section .project-name, .project-page .hero-section .project-section-name {
+.project-page .hero-section .project-name, .project-page .hero-section .project-section-name, .project-page .hero-section #about-page .approach-section-name, #about-page .project-page .hero-section .approach-section-name {
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
   grid-column: 3/6;
@@ -1306,7 +1305,7 @@ footer {
   -ms-grid-column-span: 4;
   grid-column: 3/7; }
   .project-page .project-section-text p:not(:first-of-type), .project-page .project-section-text .project-image--medium-width figcaption:not(:first-of-type), .project-page .project-image--medium-width .project-section-text figcaption:not(:first-of-type), .project-page .project-section-text .project-image--full-width figcaption:not(:first-of-type), .project-page .project-image--full-width .project-section-text figcaption:not(:first-of-type), .project-page .project-section-text .approach ul li:not(:first-of-type), .approach ul .project-page .project-section-text li:not(:first-of-type), .project-page .project-section-text .project-role__description:not(:first-of-type), .project-page .project-section-text .project-subsection-text ol:not(:first-of-type), .project-page .project-subsection-text .project-section-text ol:not(:first-of-type) {
-    margin-top: 37.5px; }
+    margin-top: 28.125px; }
 
 .project-page .project-role {
   -ms-grid-column: 7;
@@ -1446,21 +1445,112 @@ footer {
   color: #963484; }
 
 #about-page .hero-section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(8, 12.5%);
   margin: 0 auto;
   max-width: 1440px;
   width: 100%;
-  margin-top: 45px; }
+  grid-template-columns: 12.5% 6.25% 6.25% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  height: 675px;
+  margin: 45px auto;
+  position: relative; }
   #about-page .hero-section img {
-    -ms-grid-column: 5;
+    -ms-grid-column: 6;
     -ms-grid-column-span: 3;
-    grid-column: 5/8;
+    grid-column: 6/9;
     object-fit: contain;
-    width: 540px; }
+    position: absolute;
+    width: 100%;
+    z-index: -100; }
 
 #about-page .hero-text {
-  width: 650px; }
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3/7; }
+  #about-page .hero-text__divider {
+    background: #00CED1;
+    height: 5px;
+    margin-top: 22.5px;
+    width: 180px; }
+
+#about-page .approach-section {
+  width: 100%; }
+
+#about-page .approach-section-text {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%; }
+
+#about-page .approach-section-name {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2/7;
+  color: #898989;
+  font-size: 20px;
+  letter-spacing: 1.75px; }
+
+#about-page .approach-section-title {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2/7;
+  margin: 33.75px 0 45px 0; }
+
+#about-page .approach-section-text p, #about-page .approach-section-text .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width #about-page .approach-section-text figcaption, #about-page .approach-section-text .project-page .project-image--full-width figcaption, .project-page .project-image--full-width #about-page .approach-section-text figcaption, #about-page .approach-section-text .approach ul li, .approach ul #about-page .approach-section-text li, #about-page .approach-section-text .project-page .project-role__description, .project-page #about-page .approach-section-text .project-role__description, #about-page .approach-section-text .project-page .project-subsection-text ol, .project-page .project-subsection-text #about-page .approach-section-text ol {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3/7; }
+  #about-page .approach-section-text p:not(:first-of-type), #about-page .approach-section-text .project-page .project-image--medium-width figcaption:not(:first-of-type), .project-page .project-image--medium-width #about-page .approach-section-text figcaption:not(:first-of-type), #about-page .approach-section-text .project-page .project-image--full-width figcaption:not(:first-of-type), .project-page .project-image--full-width #about-page .approach-section-text figcaption:not(:first-of-type), #about-page .approach-section-text .approach ul li:not(:first-of-type), .approach ul #about-page .approach-section-text li:not(:first-of-type), #about-page .approach-section-text .project-page .project-role__description:not(:first-of-type), .project-page #about-page .approach-section-text .project-role__description:not(:first-of-type), #about-page .approach-section-text .project-page .project-subsection-text ol:not(:first-of-type), .project-page .project-subsection-text #about-page .approach-section-text ol:not(:first-of-type) {
+    margin-top: 28.125px; }
+
+#about-page .tool-stack-section {
+  margin: 180px 0; }
+
+#about-page .tool-stack-section .section-title {
+  line-height: normal;
+  margin: 0 auto;
+  max-width: 1080px;
+  width: 75%; }
+
+#about-page .tool-stack-logos {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 67.5px auto 0 auto;
+  max-width: 1080px;
+  width: 75%; }
+
+#about-page #abstract-logo {
+  height: 34px;
+  object-fit: contain; }
+
+#about-page #photoshop-logo {
+  height: 26px;
+  object-fit: contain; }
+
+#about-page #axure-logo {
+  height: 25px;
+  object-fit: contain; }
+
+#about-page #lookback-logo {
+  height: 20px;
+  object-fit: contain; }
+
+#about-page #sketch-logo {
+  height: 25px;
+  object-fit: contain; }
+
+#about-page #zeplin-logo {
+  height: 34px;
+  object-fit: contain; }
+
+#about-page .work-section {
+  margin: 0 0 135px 0; }
 
 /*# sourceMappingURL=style.css.map */
