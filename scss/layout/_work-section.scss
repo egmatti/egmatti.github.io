@@ -30,6 +30,7 @@
   background: rgba($white, 0);
   cursor: pointer;
   display: flex;
+  position: relative;
 
   &:hover {
     @include box-shadow();
@@ -43,7 +44,7 @@
     color: $white;
   }
 
-  &:hover .project-link {
+  &:hover .project-text-link {
     color: $white !important;
 
     &:after {
@@ -51,6 +52,15 @@
       margin-left: 13.25px;
     }
   }
+}
+
+.project-link span {
+  height:100%;
+  left: 0;
+  position: absolute;
+  top:0;
+  width:100%;
+  z-index: 1;
 }
 
 .project-text {
@@ -79,7 +89,7 @@
   }
 }
 
-#project-one .project-link {
+#project-one .project-text-link {
   color: $red;
 
   &:after {
@@ -96,7 +106,7 @@
   }
 }
 
-#project-two .project-link {
+#project-two .project-text-link {
   color: $royal-blue;
 
   &:after {
@@ -113,7 +123,7 @@
   }
 }
 
-#project-three .project-link {
+#project-three .project-text-link {
   color: $plum;
 
   &:after {
@@ -130,7 +140,7 @@
   }
 }
 
-#project-four .project-link {
+#project-four .project-text-link {
   color: $kelly-green;
 
   &:after {
@@ -147,7 +157,7 @@
   }
 }
 
-#project-five .project-link {
+#project-five .project-text-link {
   color: $burnt-orange;
 
   &:after {
@@ -164,7 +174,7 @@
   }
 }
 
-#project-six .project-link {
+#project-six .project-text-link {
   color: $sky-blue;
 
   &:after {
@@ -175,7 +185,7 @@
 .project-placeholder {
   cursor: default;
 
-  &:hover .project-link {
+  &:hover .project-text-link {
 
     &:after {
       content: none !important;
@@ -183,7 +193,7 @@
   }
 }
 
-.project-link-placeholder {
+.project-text-link-placeholder {
   cursor: default;
 
   &:after {

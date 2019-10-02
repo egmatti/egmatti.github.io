@@ -913,7 +913,8 @@ footer {
   align-items: center;
   background: rgba(255, 255, 255, 0);
   cursor: pointer;
-  display: flex; }
+  display: flex;
+  position: relative; }
   .project:hover {
     -webkit-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
     -moz-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
@@ -922,11 +923,19 @@ footer {
     color: #ffffff; }
   .project:hover .project-title {
     color: #ffffff; }
-  .project:hover .project-link {
+  .project:hover .project-text-link {
     color: #ffffff !important; }
-    .project:hover .project-link:after {
+    .project:hover .project-text-link:after {
       content: url("../img/icons/text-link-arrows/text-link-arrow-white.svg") !important;
       margin-left: 13.25px; }
+
+.project-link span {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
 
 .project-text {
   margin: 0 45px; }
@@ -953,9 +962,9 @@ footer {
     background: linear-gradient(135deg, #E84855 0%, #E87C59 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 ); }
 
-#project-one .project-link {
+#project-one .project-text-link {
   color: #E84855; }
-  #project-one .project-link:after {
+  #project-one .project-text-link:after {
     content: url("../img/icons/text-link-arrows/text-link-arrow-red.svg"); }
 
 #project-two {
@@ -969,9 +978,9 @@ footer {
     background: linear-gradient(135deg, #4357AD 0%, #438BB1 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 ); }
 
-#project-two .project-link {
+#project-two .project-text-link {
   color: #4357AD; }
-  #project-two .project-link:after {
+  #project-two .project-text-link:after {
     content: url("../img/icons/text-link-arrows/text-link-arrow-royal-blue.svg"); }
 
 #project-three {
@@ -985,9 +994,9 @@ footer {
     background: linear-gradient(135deg, #963484 0%, #966888 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 ); }
 
-#project-three .project-link {
+#project-three .project-text-link {
   color: #963484; }
-  #project-three .project-link:after {
+  #project-three .project-text-link:after {
     content: url("../img/icons/text-link-arrows/text-link-arrow-plum.svg"); }
 
 #project-four {
@@ -1001,9 +1010,9 @@ footer {
     background: linear-gradient(135deg, #60D394 0%, #60FF98 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 ); }
 
-#project-four .project-link {
+#project-four .project-text-link {
   color: #60D394; }
-  #project-four .project-link:after {
+  #project-four .project-text-link:after {
     content: url("../img/icons/text-link-arrows/text-link-arrow-kelly-green.svg"); }
 
 #project-five {
@@ -1017,9 +1026,9 @@ footer {
     background: linear-gradient(135deg, #F06543 0%, #F09947 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 ); }
 
-#project-five .project-link {
+#project-five .project-text-link {
   color: #F06543; }
-  #project-five .project-link:after {
+  #project-five .project-text-link:after {
     content: url("../img/icons/text-link-arrows/text-link-arrow-burnt-orange.svg"); }
 
 #project-six {
@@ -1033,19 +1042,19 @@ footer {
     background: linear-gradient(135deg, #009ACD 0%, #00CED1 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 ); }
 
-#project-six .project-link {
+#project-six .project-text-link {
   color: #009ACD; }
-  #project-six .project-link:after {
+  #project-six .project-text-link:after {
     content: url("../img/icons/text-link-arrows/text-link-arrow-sky-blue.svg"); }
 
 .project-placeholder {
   cursor: default; }
-  .project-placeholder:hover .project-link:after {
+  .project-placeholder:hover .project-text-link:after {
     content: none !important; }
 
-.project-link-placeholder {
+.project-text-link-placeholder {
   cursor: default; }
-  .project-link-placeholder:after {
+  .project-text-link-placeholder:after {
     content: none !important;
     cursor: default; }
 
