@@ -28,6 +28,12 @@
       display: block;
       font-family: $font-bold;
       margin-bottom: 10px;
+
+      span {
+        color: $medium-gray;
+        font-family: $font-regular;
+        font-size: 14px;
+      }
     }
 
     input {

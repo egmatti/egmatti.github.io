@@ -1611,6 +1611,10 @@ footer {
     display: block;
     font-family: "Metropolis Bold", Helvetica, sans-serif;
     margin-bottom: 10px; }
+    #contact-page .contact-form div label span {
+      color: #898989;
+      font-family: "Metropolis Regular", Helvetica, sans-serif;
+      font-size: 14px; }
   #contact-page .contact-form div input {
     border: 2px solid rgba(184, 184, 184, 0.75);
     border-radius: 5px;
