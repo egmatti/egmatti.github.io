@@ -100,20 +100,17 @@
 }
 
 .featured-project-name {
-  @include text-shadow();
   color: $white;
   margin-left: 90px;
 }
 
 .featured-project-title {
-  @include text-shadow();
   color: $white;
   margin: 33.75px 0 22.5px 135px;
   width: 360px;
 }
 
 .featured-project-description {
-  @include text-shadow();
   color: $white;
   margin-left: 135px;
   width: 360px;

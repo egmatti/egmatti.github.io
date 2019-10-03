@@ -1152,24 +1152,15 @@ footer {
   z-index: 50; }
 
 .featured-project-name {
-  -webkit-text-shadow: 0px 0.5px 5px rgba(18, 18, 18, 0.125);
-  -moz-text-shadow: 0px 0.5px 5px rgba(18, 18, 18, 0.125);
-  text-shadow: 0px 0.5px 5px rgba(18, 18, 18, 0.125);
   color: #ffffff;
   margin-left: 90px; }
 
 .featured-project-title {
-  -webkit-text-shadow: 0px 0.5px 5px rgba(18, 18, 18, 0.125);
-  -moz-text-shadow: 0px 0.5px 5px rgba(18, 18, 18, 0.125);
-  text-shadow: 0px 0.5px 5px rgba(18, 18, 18, 0.125);
   color: #ffffff;
   margin: 33.75px 0 22.5px 135px;
   width: 360px; }
 
 .featured-project-description {
-  -webkit-text-shadow: 0px 0.5px 5px rgba(18, 18, 18, 0.125);
-  -moz-text-shadow: 0px 0.5px 5px rgba(18, 18, 18, 0.125);
-  text-shadow: 0px 0.5px 5px rgba(18, 18, 18, 0.125);
   color: #ffffff;
   margin-left: 135px;
   width: 360px; }
