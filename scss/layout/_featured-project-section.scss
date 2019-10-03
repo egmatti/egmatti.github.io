@@ -100,17 +100,20 @@
 }
 
 .featured-project-name {
+  @include text-shadow();
   color: $white;
   margin-left: 90px;
 }
 
 .featured-project-title {
+  @include text-shadow();
   color: $white;
   margin: 33.75px 0 22.5px 135px;
   width: 360px;
 }
 
 .featured-project-description {
+  @include text-shadow();
   color: $white;
   margin-left: 135px;
   width: 360px;
@@ -126,10 +129,43 @@
   }
 }
 
-.featured-project-image {
+#featured-project__e-commerce-site .featured-project-image {
   height: 100%;
   object-fit: contain;
   position: absolute;
   right: 0;
   top: 0;
+}
+
+#featured-project__creation-flows .featured-project-image {
+  height: 70%;
+  object-fit: contain;
+  position: absolute;
+  right: 20px;
+  top: 49%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#featured-project__campaign-results .featured-project-image {
+  height: 77.5%;
+  object-fit: contain;
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#featured-project__tasks-and-playbooks .featured-project-image {
+  height: 72.5%;
+  object-fit: contain;
+  position: absolute;
+  right: 5px;
+  top: 49%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
