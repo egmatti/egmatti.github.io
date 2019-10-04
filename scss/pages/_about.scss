@@ -12,9 +12,10 @@
 
   img {
     @include grid-child(6,9);
+    margin-left: 5%;
     object-fit: contain;
     position: absolute;
-    width: 100%;
+    width: 90%;
     z-index: -100;
   }
 }

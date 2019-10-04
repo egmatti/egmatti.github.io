@@ -1516,9 +1516,10 @@ footer {
     -ms-grid-column: 6;
     -ms-grid-column-span: 3;
     grid-column: 6/9;
+    margin-left: 5%;
     object-fit: contain;
     position: absolute;
-    width: 100%;
+    width: 90%;
     z-index: -100; }
 
 #about-page .hero-text {
