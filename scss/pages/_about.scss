@@ -32,7 +32,21 @@
 }
 
 #about-page .approach-section  {
+  position: relative;
   width: 100%;
+}
+
+#about-page .resume-link {
+   @include grid-child(7,9);
+   left: 75%;
+   position: absolute;
+   top: 60px;
+
+   @include e(link) {
+     display: block;
+     font-size: 16px;
+     line-height: 24px;
+   }
 }
 
 #about-page .approach-section-text {

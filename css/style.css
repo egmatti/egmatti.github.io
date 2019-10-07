@@ -1533,7 +1533,20 @@ footer {
     width: 180px; }
 
 #about-page .approach-section {
+  position: relative;
   width: 100%; }
+
+#about-page .resume-link {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 2;
+  grid-column: 7/9;
+  left: 75%;
+  position: absolute;
+  top: 60px; }
+  #about-page .resume-link__link {
+    display: block;
+    font-size: 16px;
+    line-height: 24px; }
 
 #about-page .approach-section-text {
   display: -ms-grid;
