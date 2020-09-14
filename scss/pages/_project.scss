@@ -101,27 +101,8 @@
   position: relative;
 }
 
-.project-page .project-subsection-one:before {
+.project-page .project-subsection-number {
   @include grid-child(2,3);
-  content: url('../img/projects/subsection-numbers/subsection-one.svg');
-  position: absolute;
-}
-
-.project-page .project-subsection-two:before {
-  @include grid-child(2,3);
-  content: url('../img/projects/subsection-numbers/subsection-two.svg');
-  position: absolute;
-}
-
-.project-page .project-subsection-three:before {
-  @include grid-child(2,3);
-  content: url('../img/projects/subsection-numbers/subsection-three.svg');
-  position: absolute;
-}
-
-.project-page .project-subsection-four:before {
-  @include grid-child(2,3);
-  content: url('../img/projects/subsection-numbers/subsection-four.svg');
   position: absolute;
 }
 

@@ -6,9 +6,6 @@ ABOUT PAGE
 <html class="no-js" lang="">
 
 <head>
-
-<!-- GOOGLE ANALYTICS -->
-
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149525081-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -17,19 +14,14 @@ ABOUT PAGE
 
     gtag('config', 'UA-149525081-1');
   </script>
-
-
   <meta charset="utf-8">
   <title>About | Emily Mattison Design</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-
-
-<!-- FAVICON -->
-
   <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
@@ -47,7 +39,6 @@ ABOUT PAGE
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-
 </head>
 
 <body id="about-page">
@@ -98,7 +89,7 @@ ABOUT PAGE
   <section class="work-section">
     <h3 class="section-title">Work</h3>
     <div class="projects-grid">
-      <div class="project" id="project-one">
+      <div class="project" id="project-one" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart">
         <a href="/creation-flows" class="project-link"><span></span></a>
         <div class="project-text">
           <span class="project-name">UserIQ</span>
@@ -106,7 +97,7 @@ ABOUT PAGE
           <span class="text-link project-text-link">View project</span>
         </div>
       </div>
-      <div class="project" id="project-two">
+      <div class="project" id="project-two" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
         <a href="/campaign-results" class="project-link"><span></span></a>
         <div class="project-text">
           <span class="project-name">UserIQ</span>
@@ -114,7 +105,7 @@ ABOUT PAGE
           <span class="text-link project-text-link">View project</span>
         </div>
       </div>
-      <div class="project" id="project-three">
+      <div class="project" id="project-three" data-aos="slide-up" data-aos-duration="1500" data-aos-easing="ease-out-quart">
         <a href="/tasks-and-playbooks" class="project-link"><span></span></a>
         <div class="project-text">
           <span class="project-name">UserIQ</span>
@@ -122,21 +113,21 @@ ABOUT PAGE
           <span class="text-link project-text-link">View project</span>
         </div>
       </div>
-      <div class="project project-placeholder" id="project-four">
+      <div class="project project-placeholder" id="project-four" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart">
         <div class="project-text">
           <span class="project-name">Konquer Jiu Jitsu</span>
           <h4 class="project-title">E-Commerce Site</h4>
           <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
         </div>
       </div>
-      <div class="project project-placeholder" id="project-five">
+      <div class="project project-placeholder" id="project-five" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
         <div class="project-text">
           <span class="project-name">Ballad</span>
           <h4 class="project-title">Web & Mobile App</h4>
           <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
         </div>
       </div>
-      <div class="project project-placeholder" id="project-six">
+      <div class="project project-placeholder" id="project-six" data-aos="slide-up" data-aos-duration="1500" data-aos-easing="ease-out-quart">
         <div class="project-text">
           <span class="project-name">Oliver Pluff & Co.</span>
           <h4 class="project-title">E-Commerce App</h4>
@@ -170,6 +161,10 @@ ABOUT PAGE
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
 </body>
