@@ -1,0 +1,15 @@
+// ==========================================
+// CREATION FLOWS PROJECT PAGE
+// ==========================================
+
+#cookie-banner-wizard-page .hero-background {
+  @include gradient($kelly-green, $lime-green);
+}
+
+#cookie-banner-wizard-page .project-role__label {
+   color: $kelly-green;
+}
+
+#cookie-banner-wizard-page blockquote span {
+  color: $kelly-green;
+}

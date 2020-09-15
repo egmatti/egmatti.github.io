@@ -1735,6 +1735,21 @@ footer {
   color: #963484;
 }
 
+#cookie-banner-wizard-page .hero-background {
+  background: -moz-linear-gradient(-45deg, #60D394 0%, #60FF98 100%);
+  background: -webkit-linear-gradient(-45deg, #60D394 0%, #60FF98 100%);
+  background: linear-gradient(135deg, #60D394 0%, #60FF98 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$start-color", endColorstr="$end-color",GradientType=1 );
+}
+
+#cookie-banner-wizard-page .project-role__label {
+  color: #60D394;
+}
+
+#cookie-banner-wizard-page blockquote span {
+  color: #60D394;
+}
+
 #about-page .hero-section {
   align-items: center;
   display: flex;
