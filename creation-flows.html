@@ -70,18 +70,18 @@ CREATION FLOWS PROJECT PAGE
     </div>
     <div class="project-section-text">
       <span class="project-section-name">Background</span>
-      <h4 class="project-section-title">The most popular feature with<br/>the least popular workflow</h4>
+      <h3 class="project-section-title">The most popular feature with<br/>the least popular workflow</h3>
       <p>As an early-stage startup that was still in the process of staking out its position within the product management and customer success space, my former company UserIQ initially focused on developing three widely different feature sets in an effort to satisfy the largest number of new and existing users. The most popular and reliable of these three feature sets were in-app engagements—pop-up announcements, guided tours, surveys, and info bars—that other SaaS companies could use within their products to present information to or gather feedback from their users.</p>
     </div>
     <figure class="project-image--medium-width">
       <img data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart" src="img/projects/creation-flows/campaign-example.png" alt="An example of a UserIQ NPS Survey on a customer's site.">
-      <figcaption>An example of a UserIQ NPS Survey on a customer's site.</figcaption>
+      <figcaption><span>Screenshot:</span>An example of a UserIQ NPS Survey on a customer's site.</figcaption>
     </figure>
     <div class="project-section-text">
       <p>Despite its popularity, however, creating a “campaign” was an enormous headache for our customers partly because they were unable to style their campaigns while creating them. To make their campaigns appear the way they wanted them to, they first had to go to a separate part of the app and create a theme that included styles for all campaign types before they could go back and apply that theme to the campaign they were trying to create. To make matters worse, the convoluted arrangement of theme options within this separate Create Theme flow meant that users were having trouble fulfilling the basic tasks of creating a theme.</p>
     </div>
     <blockquote data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart">
-      <p>We are working on our Campaign Themes and having trouble editing the font [and] border color for buttons.”</p>
+      <p>We are working on our campaign themes and having trouble editing the font [and] border color for buttons.</p>
       <span>—UserIQ customer in a Zendesk ticket to our CS team</span>
     </blockquote>
     <div class="project-section-text">
@@ -92,70 +92,141 @@ CREATION FLOWS PROJECT PAGE
   <section class="project-section process-section">
     <div class="project-section-text">
       <span class="project-section-name">Process</span>
-      <h4 class="project-section-title">Creating a more intuitive flow based on<br/>patterns our customers were already <br/>familiar with</h4>
+      <h3 class="project-section-title">Creating a more intuitive flow based on<br/>patterns our customers were already <br/>familiar with</h3>
     </div>
 
     <div class="project-subsection-text">
       <img class="project-subsection-number" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart" src="img/projects/subsection-numbers/subsection-one.svg">
-      <h6 class="project-subsection-name">Defining the Problem & Research</h6>
+      <h5 class="project-subsection-name">Defining the Problem & Research</h5>
       <p>In order for me to better understand the problem, JD spent some time at the beginning of the project pointing out to me what he knew were the biggest issues within the Create Theme flow based on feedback he had received from the CS team. Two of the things that stood out were the scrolling tab bar at the top of the “Edit" panel that allowed the user to switch to the inputs and preview for a different campaign type as well as the placement of the custom CSS editor, which was currently hidden behind a misleading toggle below the save button.</p>
     </div>
-    <figure class="project-image--full-width">
-      <h6>Existing Create Theme Flow</h6>
-      <div class="heuristic-evaluation">
-        <img class="heuristic-evaluation--screenshot" src="img/projects/creation-flows/heuristic-evaluation/screenshot.png" alt="The existing Create Theme flow in UserIQ">
-        <img class="heuristic-evaluation--comments" src="img/projects/creation-flows/heuristic-evaluation/comments.png" alt="A heuristic evaluation of the existing Create Theme flow in UserIQ">
+    <figure class="full-width-image-background">
+      <div class="full-width-layout">
+        <img class="full-width-layout--image" src="img/projects/creation-flows/heuristic-evaluation/screenshot.png" alt="The existing Create Theme flow in UserIQ">
+        <div class="full-width-layout--description">
+          <span class="figure-name">Heuristic Evaluation</span>
+          <h5 class="figure-title">Create Theme Wizard</h5>
+          <div class="comments">
+            <div class="comment" id="comment-one" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
+              <span class="comment--title">Recognition</span>
+              <p class="comment--description">The controls for the scrolling tab bar are difficult to see and users may not realize they can switch the view.</p>
+            </div>
+            <div class="comment" id="comment-two" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
+              <span class="comment--title">Help & Consistency</span>
+              <p class="comment--description">The labels for the inputs are sometimes unclear and there are different available inputs for each of the campaign types.</p>
+            </div>
+            <div class="comment" id="comment-three" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
+              <span class="comment--title">Visibility</span>
+              <p class="comment--description">The header of the tour step preview blends in with the background of the preview panel, making it difficult for users to see their campaign.</p>
+            </div>
+            <div class="comment" id="comment-four" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
+              <span class="comment--title">Recognition</span>
+              <p class="comment--description">The UI component to switch to viewing the custom CSS editor is misleading and unlikely to be seen by users because of its placement below the Save button.</p>
+            </div>
+            <div class="comment" id="comment-five" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
+              <span class="comment--title">Aesthetics</span>
+              <p class="comment--description">The background of the campaign preview panel doesn’t extend all the way to the top, bottom, or right of the screen giving it a strange “floating” appearance.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </figure>
     <div class="project-subsection-text">
       <p>After getting a better sense of what was needed from my discussions with JD, I began to look at other apps with flows that seemed similar to UserIQ’s Create Theme flow and which our customers may have used before. MailChimp and Delighted provided good examples of how a few simple UI components, such as button groups, accordions, and a stepper, could be used to better organize this type of design wizard.</p>
     </div>
-    <figure class="project-image--full-width">
-      <div class="two-image-layout">
-        <img src="img/projects/creation-flows/inspiration/mailchimp-screenshot.png" alt="Screenshot of MailChimp’s “Design Email” flow">
-        <img src="img/projects/creation-flows/inspiration/delighted-screenshot.png" alt="Screenshot of Delighted’s “Customize Appearance” flow">
+    <figure class="project-slider--medium-width">
+      <div class="medium-width-slider-image" data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart">
+        <div>
+          <img src="img/projects/creation-flows/inspiration/mailchimp-screenshot.png" alt="Screenshot of MailChimp’s “Design Email” flow">
+        </div>
+        <figcaption><span>Inspiration #1:</span>An example of MailChimp’s wizard for creating a custom email.</figcaption>
       </div>
-      <figcaption>Screenshots of MailChimp’s “Design Email” flow (left) and Delighted’s “Customize Appearance” flow (right).</figcaption>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/creation-flows/inspiration/delighted-screenshot.png" alt="Screenshot of Delighted’s “Customize Appearance” flow">
+        </div>
+        <figcaption><span>Inspiration #2:</span>An example of Delighted’s wizard for creating a custom NPS Survey.</figcaption>
+      </div>
     </figure>
 
     <div class="project-subsection-text">
       <img class="project-subsection-number" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart" src="img/projects/subsection-numbers/subsection-two.svg">
-      <h6 class="project-subsection-name">Sketches</h6>
+      <h5 class="project-subsection-name">Sketches</h5>
       <p>Once I began sketching as many viable solutions to the problem that I could think of, I realized that the biggest challenge to redesigning the Create Theme flow was going to be figuring out the best way for users to switch to a variety of different views on the same screen. They needed to be able to:</p>
       <ol>
-        <li>Switch between the WYSIWYG inputs for different campaign types within the “Edit” panel</li>
-        <li>Switch between the WYSIWYG inputs and custom CSS editor that advanced users were using within the “Edit” panel</li>
-        <li>Switch between desktop and mobile previews within the “Preview” panel and, in some cases:</li>
-        <li>Switch between different campaign type previews within the “Preview” panel</li>
+        <li data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">Switch between the WYSIWYG inputs for different campaign types within the “Edit” panel</li>
+        <li data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">Switch between the WYSIWYG inputs and custom CSS editor that advanced users were using within the “Edit” panel</li>
+        <li data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">Switch between desktop and mobile previews within the “Preview” panel and, in some cases:</li>
+        <li data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">Switch between different campaign type previews within the “Preview” panel</li>
       </ol>
       <p>One of the other challenges that I realized we needed to solve for was the random assortment of WYSIWYG inputs for each campaign type. The layout of inputs was disorganized with inputs for elements that would appear in the footer of the campaign being displayed above inputs for elements that would appear in the header. What’s more, users had the ability to change the styles for elements that were in multiple campaign types only on certain campaign types. It was obvious that we needed to determine a universal set of available WYSIWYG inputs with consistent naming conventions for all campaign types, but also include WYSIWYG inputs for elements that were unique to particular campaign types.</p>
       <p>The sketches that I initially put together reflected these two challenges and were inspired, in part, by MailChimp’s and Delighted’s creation flows.</p>
     </div>
-    <figure class="project-image--full-width">
-      <div class="two-image-layout">
-        <img src="img/projects/creation-flows/sketches/1.png" alt="My first two sketches for the new Create Theme flow">
-        <img src="img/projects/creation-flows/sketches/2.png" alt="My second two sketches for the new Create Theme flow">
+    <figure class="project-slider--medium-width sketch-slider">
+      <div class="medium-width-slider-image" data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart">
+        <div>
+          <img src="img/projects/creation-flows/sketches/sketch-1.png" alt="Early sketch for the Create Theme flow.">
+        </div>
+        <figcaption><span>Sketch #1:</span>One of my early sketches for the Create Theme flow.</figcaption>
       </div>
-      <figcaption>A few of my early sketches for the new Create Theme flow.</figcaption>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/creation-flows/sketches/sketch-2.png" alt="Early sketch for the Create Theme flow.">
+        </div>
+        <figcaption><span>Sketch #2:</span>One of my early sketches for the Create Theme flow.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/creation-flows/sketches/sketch-3.png" alt="Early sketch for the Create Theme flow.">
+        </div>
+        <figcaption><span>Sketch #3:</span>One of my early sketches for the Create Theme flow.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/creation-flows/sketches/sketch-4.png" alt="Early sketch for the Create Theme flow.">
+        </div>
+        <figcaption><span>Sketch #4:</span>One of my early sketches for the Create Theme flow.</figcaption>
+      </div>
     </figure>
 
     <div class="project-subsection-text">
       <img class="project-subsection-number" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart" src="img/projects/subsection-numbers/subsection-three.svg">
-      <h6 class="project-subsection-name">Mockups, Prototypes, & User Testing</h6>
+      <h5 class="project-subsection-name">Mockups, Prototypes, & User Testing</h5>
       <p>After thinking about the pros and cons for each of the sketches, I was able to narrow down the number of viable options to just two concepts, which I converted into mockups and later prototypes. The key difference between the two concepts was that one concept had an additional tab in the tab bar for “Theme CSS” that would allow the user to switch to viewing the custom CSS editor for all campaign types and the other had a button group within the “Edit” panel that would allow the user to switch between viewing the WYSIWYG inputs for that campaign type and the custom CSS editor, which still applied to all campaign types.</p>
     </div>
-    <figure class="project-image--full-width">
-      <h6>New Create Theme Flow—Tab Option</h6>
-      <div class="two-image-layout">
-        <img src="img/projects/creation-flows/mockups/create-theme-tab-edit.png" alt="The Edit view of the new tabbed Create Theme flow concept">
-        <img src="img/projects/creation-flows/mockups/create-theme-tab-css.png" alt="The Custom CSS view of the new tabbed Create Theme flow concept">
-      </div>
-      <h6>New Create Theme Flow—Toggle Option</h6>
-      <div class="two-image-layout">
-        <img src="img/projects/creation-flows/mockups/create-theme-toggle-edit.png" alt="The Edit view of the new toggle Create Theme flow concept">
-        <img src="img/projects/creation-flows/mockups/create-theme-toggle-css.png" alt="The Custom CSS view of the new toggle Create Theme flow concept">
+    <figure class="full-width-slider-background">
+      <h4>Prototypes</h4>
+      <div class="project-slider--full-width prototype-slider">
+        <div class="slide-1 full-width-layout">
+          <img class="full-width-layout--image" src="img/projects/creation-flows/prototypes/create-theme-tab.gif" alt="A gif of the tabbed Create Theme flow prototype">
+          <div class="full-width-layout--description">
+            <span class="figure-name">Prototype #1</span>
+            <h5 class="figure-title">Tab Option</h5>
+            <p class="figure-description">In this tabbed concept for the Create Theme flow, the user would be able to make edits to their campaign styles by clicking on the tab for a particular campaign type in the tab bar at the top of the page and then making adjustments to that campaign type's styles using the WYSIWYG inputs to the left of the campaign preview.</p>
+            <p class="figure-description">If the user wanted to make edits to their theme beyond the available WYSIWYG inputs, they could click on the "Theme CSS" tab in the tab bar. This would take them to a special view with a CSS console. The user could input custom CSS into the CSS console that would then be applied to all their campaign types. To switch the preview on the right of the screen to a different campaign type, the user would use the dropdown menu above the CSS console.</p>
+          </div>
+        </div>
+        <div class="slide-2 full-width-layout">
+          <img class="full-width-layout--image" src="img/projects/creation-flows/prototypes/create-theme-toggle.gif" alt="A gif of the tabbed Create Theme flow prototype">
+          <div class="full-width-layout--description">
+            <span class="figure-name">Prototype #2</span>
+            <h5 class="figure-title">Toggle Option</h5>
+            <p class="figure-description">In this toggle concept for the Create Theme flow, the user would be able to make edits to their campaign styles by clicking on the tab for a particular campaign type in the tab bar at the top of the page and then making adjustments to that campaign type's styles using the WYSIWYG inputs to the left of the campaign preview.</p>
+            <p class="figure-description">If the user wanted to make edits to their theme beyond the available WYSIWYG inputs, they could click on the "Custom CSS" toggle at the top of that campaign type's Edit panel. This would take them to a different version of the Edit panel with a CSS console. The user could input custom CSS into the CSS console that would then be applied to not just that particular campaign type, but all their campaign types. The user would see the same custom CSS under each campaign type's "Custom CSS" toggle.</p>
+          </div>
+        </div>
       </div>
     </figure>
+    <div class="project-slider--full-width-nav">
+      <div class="nav-slide nav-slide-1">
+        <span>Prototype #1</span>
+        <img src="img/projects/creation-flows/mockups/create-theme-tab-edit.png" alt="The tabbed Create Theme flow prototype">
+      </div>
+      <div class="nav-slide nav-slide-2">
+        <span>Prototype #2</span>
+        <img src="img/projects/creation-flows/mockups/create-theme-toggle-edit.png" alt="The toggle Create Theme flow prototype">
+      </div>
+    </div>
     <div class="project-subsection-text">
       <p>Our uncertainty about users’ mental models was the reason for the difference between these two concepts. JD and I had learned from the engineering team that any custom CSS that was added to the theme would apply to all campaign types within the theme rather than to specific campaign types, so we wondered whether it would make more sense to users if the custom CSS editor were in its own tab rather than in the “Edit” panel. We also wondered, however, if users would be more likely to miss the custom CSS editor if it were placed within the last tab on the tab bar.</p>
       <p>From a few hallway tests that we conducted with our coworkers who weren’t on the product team, it became clear that the custom CSS editor was harder to find when it was placed within the tab bar. It also became clear that users didn’t care that much whether or not the custom CSS for different campaign types was linked, alleviating any concerns that we had about confusing mental models.</p>
@@ -165,25 +236,39 @@ CREATION FLOWS PROJECT PAGE
   <section class="project-section solution-section">
     <div class="project-section-text">
       <span class="project-section-name">Solution</span>
-      <h4 class="project-section-title">Applying new patterns to improve overall<br/>user experience</h4>
+      <h3 class="project-section-title">Applying new patterns to improve overall<br/>user experience</h3>
       <p>After making one final update to the mockups, we had landed on a solution that we felt confident in and that our engineering team was able to release following a three week sprint cycle.</p>
     </div>
-    <figure class="project-image--full-width">
-      <div class="two-image-layout">
-        <img src="img/projects/creation-flows/mockups/create-theme-final-edit.png" alt="The Edit view of the final mockups for the new Create Theme flow">
-        <img src="img/projects/creation-flows/mockups/create-theme-final-css.png" alt="The Custom CSS view of the final mockups for the new Create Theme flow">
+    <figure class="project-slider--medium-width mockup-slider">
+      <div class="medium-width-slider-image" data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart">
+        <div>
+          <img src="img/projects/creation-flows/mockups/create-theme-final-edit.png" alt="The Edit view of the final mockups for the new Create Theme flow.">
+        </div>
+        <figcaption><span>Mockup #1:</span>The Edit view of the final mockups for the new Create Theme flow.</figcaption>
       </div>
-      <figcaption>The final mockups for the new Create Theme flow.</figcaption>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/creation-flows/mockups/create-theme-final-css.png" alt="The Custom CSS view of the final mockups for the new Create Theme flow.">
+        </div>
+        <figcaption><span>Mockup #2:</span>The Custom CSS view of the final mockups for the new Create Theme flow.</figcaption>
+      </div>
     </figure>
     <div class="project-section-text">
       <p>Within another few weeks, however, our Director of Software Engineering told our product team that the latest releases, including the Create Theme one, had improved the user experience in certain areas of our app so much that it would be worthwhile for us to spend a few days in a war room session determining how we could apply some of the new UX patterns to other parts of our app. After some discussion, JD and I suggested applying the two-panel concept and accordion pattern from the Create Theme flow to the Create Campaign flow, reducing some of the gaps within the overall process for creating a campaign.</p>
     </div>
-    <figure class="project-image--full-width">
-      <div class="two-image-layout">
-        <img src="img/projects/creation-flows/wireframes/create-campaign-setup.png" alt="The Tour Setup step of the wireframes JD put together for the new Create Campaign flow">
-        <img src="img/projects/creation-flows/wireframes/create-campaign-steps.png" alt="The Tour Steps step of the wireframes JD put together for the new Create Campaign flow">
+    <figure class="project-slider--medium-width wireframe-slider">
+      <div class="medium-width-slider-image" data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart">
+        <div>
+          <img src="img/projects/creation-flows/wireframes/create-campaign-setup.png" alt="The Tour Setup step of the wireframes JD put together for the new Create Campaign flow.">
+        </div>
+        <figcaption><span>Wireframe #1:</span>The Tour Setup step of the wireframes JD put together for the new Create Campaign flow.</figcaption>
       </div>
-      <figcaption>The wireframes JD put together for the new Create Campaign flow.</figcaption>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/creation-flows/mockups/create-theme-final-css.png" alt="The Tour Steps step of the wireframes JD put together for the new Create Campaign flow.">
+        </div>
+        <figcaption><span>Wireframe #2:</span>The Tour Steps step of the wireframes JD put together for the new Create Campaign flow.</figcaption>
+      </div>
     </figure>
     <div class="project-section-text">
       <p>Although there was room for future improvements, we had found a way to reduce the number of usability issues within the Create Theme and Create Campaign flows within a short period of time, as evidenced by a drop in the number of Zendesk tickets that our CS team received around creating themes and campaigns. We had also done it without disrupting either the back-end of our application or our users’ workflows, making both redesigns a success for our company and our customers.</p>
@@ -191,13 +276,13 @@ CREATION FLOWS PROJECT PAGE
   </section>
 
   <section class="work-section">
-    <h3 class="section-title">Work</h3>
+    <h2 class="section-title">Work</h2>
     <div class="projects-grid">
       <div class="project" id="project-one" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart">
         <a href="/creation-flows" class="project-link"><span></span></a>
         <div class="project-text">
           <span class="project-name">UserIQ</span>
-          <h4 class="project-title">Creation<br/>Flows</h4>
+          <h3 class="project-title">Creation<br/>Flows</h3>
           <span class="text-link project-text-link">View project</span>
         </div>
       </div>
@@ -205,7 +290,7 @@ CREATION FLOWS PROJECT PAGE
         <a href="/campaign-results" class="project-link"><span></span></a>
         <div class="project-text">
           <span class="project-name">UserIQ</span>
-          <h4 class="project-title">Campaign Results</h4>
+          <h3 class="project-title">Campaign<br/>Results</h3>
           <span class="text-link project-text-link">View project</span>
         </div>
       </div>
@@ -213,49 +298,49 @@ CREATION FLOWS PROJECT PAGE
         <a href="/tasks-and-playbooks" class="project-link"><span></span></a>
         <div class="project-text">
           <span class="project-name">UserIQ</span>
-          <h4 class="project-title">Tasks & Playbooks</h4>
+          <h3 class="project-title">Tasks & Playbooks</h3>
           <span class="text-link project-text-link">View project</span>
         </div>
       </div>
       <div class="project project-placeholder" id="project-four" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart">
         <div class="project-text">
           <span class="project-name">OneTrust</span>
-          <h4 class="project-title">Cookie Banner Wizard</h4>
+          <h3 class="project-title">Cookie Banner Wizard</h3>
           <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
         </div>
       </div>
       <div class="project project-placeholder" id="project-five" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
         <div class="project-text">
           <span class="project-name">OneTrust</span>
-          <h4 class="project-title">Marketing Landing Page</h4>
+          <h3 class="project-title">Marketing Landing Page</h3>
           <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
         </div>
       </div>
       <div class="project project-placeholder" id="project-six" data-aos="slide-up" data-aos-duration="1500" data-aos-easing="ease-out-quart">
         <div class="project-text">
           <span class="project-name">OneTrust</span>
-          <h4 class="project-title">Cookie Banner Gallery</h4>
+          <h3 class="project-title">Cookie Banner Gallery</h3>
           <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
         </div>
       </div>
       <!-- <div class="project project-placeholder" id="project-four" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart">
         <div class="project-text">
           <span class="project-name">Konquer Jiu Jitsu</span>
-          <h4 class="project-title">E-Commerce Site</h4>
+          <h3 class="project-title">E-Commerce Site</h3>
           <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
         </div>
       </div>
       <div class="project project-placeholder" id="project-five" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
         <div class="project-text">
           <span class="project-name">Ballad</span>
-          <h4 class="project-title">Web & Mobile App</h4>
+          <h3 class="project-title">Web & Mobile App</h3>
           <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
         </div>
       </div>
       <div class="project project-placeholder" id="project-six" data-aos="slide-up" data-aos-duration="1500" data-aos-easing="ease-out-quart">
         <div class="project-text">
           <span class="project-name">Oliver Pluff & Co.</span>
-          <h4 class="project-title">E-Commerce App</h4>
+          <h3 class="project-title">E-Commerce App</h3>
           <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
         </div>
       </div> -->
@@ -264,8 +349,8 @@ CREATION FLOWS PROJECT PAGE
 
   <section class="contact-section">
     <div class="contact-text">
-      <h5>Get in touch</h5>
-      <p>Interested in chatting? Feel free to send me a message and I'll get back to<br/>you when I can.</p>
+      <h3>Get in touch</h3>
+      <p>Interested in chatting? Feel free to send me a message and I'll get back to you when I can.</p>
       <a href="/contact" class="text-link">Contact me</a>
     </div>
   </section>

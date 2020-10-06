@@ -13,3 +13,43 @@
 #campaign-results-page blockquote span {
   color: $royal-blue;
 }
+
+#campaign-results-page #comment-one:before {
+  content: url('../img/projects/campaign-results/heuristic-evaluations/indices/1.svg');
+  float: left;
+  margin-right: 10px;
+}
+
+#campaign-results-page #comment-two:before {
+  content: url('../img/projects/campaign-results/heuristic-evaluations/indices/2.svg');
+  float: left;
+  margin-right: 10px;
+}
+
+#campaign-results-page #comment-three:before {
+  content: url('../img/projects/campaign-results/heuristic-evaluations/indices/3.svg');
+  float: left;
+  margin-right: 10px;
+}
+
+#campaign-results-page #comment-four:before {
+  content: url('../img/projects/campaign-results/heuristic-evaluations/indices/4.svg');
+  float: left;
+  margin-right: 10px;
+}
+
+#campaign-results-page .slick-prev {
+
+  &:before {
+    content: url('../img/projects/campaign-results/carousel-arrows/previous-arrow.svg') !important;
+    cursor: pointer;
+  }
+}
+
+#campaign-results-page .slick-next {
+
+  &:before {
+    content: url('../img/projects/campaign-results/carousel-arrows/next-arrow.svg') !important;
+    cursor: pointer;
+  }
+}

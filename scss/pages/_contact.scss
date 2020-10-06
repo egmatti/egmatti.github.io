@@ -6,7 +6,7 @@
   @include grid-parent();
   margin: 135px auto;
 
-  h4 {
+  h3 {
     @include grid-child(2,6);
   }
 
@@ -41,7 +41,7 @@
       border: 2px solid rgba(#B8B8B8, 0.75);
       border-radius: 5px;
       display: block;
-      height: 28.125px;
+      height: 37.5px;
       padding: 0 20px 0 10px;
       width: 100%;
 
@@ -56,7 +56,7 @@
       border: 2px solid rgba(#B8B8B8, 0.75);
       border-radius: 5px;
       display: block;
-      height: 215px;
+      height: 200px;
       padding: 0 20px 0 10px;
       width: 100%;
 
@@ -97,6 +97,7 @@
   @include grid-child(1,2);
   @extend .button;
   border-radius: 5px;
+  border-style: none;
   color: #ffffff;
   margin-top: 45px;
   width: 145px;

@@ -13,3 +13,19 @@
 #cookie-banner-wizard-page blockquote span {
   color: $kelly-green;
 }
+
+#cookie-banner-wizard-page .slick-prev {
+
+  &:before {
+    content: url('../img/projects/cookie-banner-wizard/carousel-arrows/previous-arrow.svg') !important;
+    cursor: pointer;
+  }
+}
+
+#cookie-banner-wizard-page .slick-next {
+
+  &:before {
+    content: url('../img/projects/cookie-banner-wizard/carousel-arrows/next-arrow.svg') !important;
+    cursor: pointer;
+  }
+}

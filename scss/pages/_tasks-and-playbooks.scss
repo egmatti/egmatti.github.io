@@ -13,3 +13,53 @@
 #tasks-and-playbooks-page blockquote span {
   color: $plum;
 }
+
+#tasks-and-playbooks-page .slick-prev {
+
+  &:before {
+    content: url('../img/projects/tasks-and-playbooks/carousel-arrows/previous-arrow.svg') !important;
+    cursor: pointer;
+  }
+}
+
+#tasks-and-playbooks-page .slick-next {
+
+  &:before {
+    content: url('../img/projects/tasks-and-playbooks/carousel-arrows/next-arrow.svg') !important;
+    cursor: pointer;
+  }
+}
+
+#tasks-and-playbooks-page .prototype-slider .slick-prev {
+  align-items: stretch;
+  background: none;
+  border: none;
+  height: 60px;
+  left: calc(50% - 340px);
+  outline-style: none;
+  padding: 0;
+  position: absolute;
+  top: 550px;
+  transform: scale(0.925);
+  width: 60px;
+  z-index: 500;
+}
+
+#tasks-and-playbooks-page .prototype-slider .slick-next {
+  align-items: stretch;
+  background: none;
+  border: none;
+  height: 60px;
+  outline-style: none;
+  padding: 0;
+  position: absolute;
+  right: calc(50% - 330px);
+  top: 550px;
+  transform: scale(0.925);
+  width: 60px;
+  z-index: 500;
+}
+
+#tasks-and-playbooks-page .project-slider--full-width-nav {
+  width: 465px;
+}

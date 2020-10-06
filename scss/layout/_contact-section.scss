@@ -10,12 +10,12 @@
 .contact-text {
   @include grid-child(3,7);
 
-  h5 {
+  h3 {
     line-height: normal;
-    margin-bottom: 22px;
+    margin-bottom: 22.5px;
   }
 }
 
 .contact-text .text-link {
-  margin-top: 22px;
+  margin-top: 22.5px;
 }

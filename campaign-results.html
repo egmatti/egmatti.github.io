@@ -70,12 +70,12 @@ CAMPAIGN RESULTS PROJECT PAGE
     </div>
     <div class="project-section-text">
       <span class="project-section-name">Background</span>
-      <h4 class="project-section-title">Engagement insights that<br/>weren’t very insightful</h4>
+      <h3 class="project-section-title">Engagement insights that<br/>weren’t very insightful</h3>
       <p>While its two target audiences of product managers and customer success managers were still defining their emerging roles within SaaS businesses, my former company UserIQ focused on developing an app that would provide a little bit of everything that it thought the two roles might want. This included a suite of product analytics, customer health, and in-app engagement features, the last of which would allow customers to build pop-up announcements, tours, and surveys that they could then present to their users within their own apps.</p>
     </div>
     <figure class="project-image--medium-width">
       <img data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart" src="img/projects/campaign-results/custom-survey-example.png" alt="An example of a UserIQ custom survey on a customer’s site.">
-      <figcaption>An example of a UserIQ custom survey on a customer’s site.</figcaption>
+      <figcaption><span>Screenshot:</span>An example of a UserIQ custom survey on a customer’s site.</figcaption>
     </figure>
     <div class="project-section-text">
       <p>As a follow-up to allowing customers to build these in-app engagements, which we called “campaigns,” the UserIQ app offered customers the ability to view the results of their campaigns on “campaign detail” pages. The campaign details were meant to provide deep insights to our customers about how their users were interacting with the campaigns, but, in many cases, they didn’t provide the kind of insights that our customers needed with the campaign details for custom surveys particularly lacking.</p>
@@ -86,80 +86,127 @@ CAMPAIGN RESULTS PROJECT PAGE
   <section class="project-section process-section">
     <div class="project-section-text">
       <span class="project-section-name">Process</span>
-      <h4 class="project-section-title">Determining what users wanted to know and<br/>how to best organize that information</h4>
+      <h3 class="project-section-title">Determining what users wanted to know and<br/>how to best organize that information</h3>
     </div>
 
     <div class="project-subsection-text">
       <img class="project-subsection-number" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart" src="img/projects/subsection-numbers/subsection-one.svg">
-      <h6 class="project-subsection-name">Defining the Problem & Research</h6>
+      <h5 class="project-subsection-name">Defining the Problem & Research</h5>
       <p>To get started, I spent some time reviewing the idiosyncrasies of the Custom Survey Detail page and its subpages. The primary Custom Survey Detail page had a number of usability issues including the fact that the survey questions didn’t have results attached to them even though that was the purpose of going to the page and the survey questions were the only thing displayed on it.</p>
     </div>
-    <figure class="project-image--full-width">
-      <h6>Existing Custom Survey Detail Page</h6>
-      <div class="heuristic-evaluation">
-        <img class="heuristic-evaluation--screenshot" src="img/projects/campaign-results/heuristic-evaluations/custom-survey-detail/screenshot.png" alt="The existing Custom Survey Detail page in UserIQ">
-        <img class="heuristic-evaluation--comments" src="img/projects/campaign-results/heuristic-evaluations/custom-survey-detail/comments.png" alt="A heuristic evaluation of the existing Custom Survey Detail page in UserIQ">
+    <figure class="full-width-image-background">
+      <div class="full-width-layout">
+        <img class="full-width-layout--image" src="img/projects/campaign-results/heuristic-evaluations/custom-survey-detail/screenshot.png" alt="The existing Custom Survey Detail page in UserIQ">
+        <div class="full-width-layout--description">
+          <span class="figure-name">Heuristic Evaluation</span>
+          <h5 class="figure-title">Custom Survey Detail</h5>
+          <div class="comments">
+            <div class="comment" id="comment-one" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
+              <span class="comment--title">Visibility</span>
+              <p class="comment--description">The cards containing each question don’t actually show the question’s results, which likely leaves users feeling frustrated since that was their reason for viewing the page.</p>
+            </div>
+            <div class="comment" id="comment-two" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
+              <span class="comment--title">Consistency</span>
+              <p class="comment--description">The secondary buttons at the bottom of each question’s card break the pattern used throughout the rest of our app of having “Show More” links at the bottom of cards.</p>
+            </div>
+            <div class="comment" id="comment-three" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
+              <span class="comment--title">Language & Help</span>
+              <p class="comment--description">The text on the free response button is confusingly worded. The questions’ cards also don’t provide any indication of what type of question it is.</p>
+            </div>
+            <div class="comment" id="comment-four" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
+              <span class="comment--title">Aesthetics</span>
+              <p class="comment--description">There’s an enormous amount of white space on the right side of each question’s card.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </figure>
     <div class="project-subsection-text">
       <p>Unfortunately, the subpages containing information about each question weren’t much better with users often failing to realize that the bolded number in front of each possible answer was the number of responses that that answer had received.</p>
     </div>
-    <figure class="project-image--full-width">
-      <h6>Existing Question Results Subpage</h6>
-      <div class="heuristic-evaluation">
-        <img class="heuristic-evaluation--screenshot" src="img/projects/campaign-results/heuristic-evaluations/question-results/screenshot.png" alt="The existing Question Results subpage in UserIQ">
-        <img class="heuristic-evaluation--comments" src="img/projects/campaign-results/heuristic-evaluations/question-results/comments.png" alt="A heuristic evaluation of the existing Question Results subpage in UserIQ">
+    <figure class="full-width-image-background">
+      <div class="full-width-layout">
+        <img class="full-width-layout--image" src="img/projects/campaign-results/heuristic-evaluations/question-results/screenshot.png" alt="The existing Question Results subpage in UserIQ">
+        <div class="full-width-layout--description">
+          <span class="figure-name">Heuristic Evaluation</span>
+          <h5 class="figure-title">Questions Results</h5>
+          <div class="comments">
+            <div class="comment" id="comment-one" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
+              <span class="comment--title">Recognition</span>
+              <p class="comment--description">The question results are difficult to understand because of their format in an ordered listed with the number of results for each response appearing before the response itself. </p>
+            </div>
+            <div class="comment" id="comment-two" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
+              <span class="comment--title">Help</span>
+              <p class="comment--description">The information on the question results subpage still isn’t offering users any kind of indication as to what type of question this is.</p>
+            </div>
+            <div class="comment" id="comment-three" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
+              <span class="comment--title">Visibility & Help</span>
+              <p class="comment--description">In many cases, the table of Custom Survey Responses wouldn’t display any results even if the custom survey had lots of responses.</p>
+            </div>
+            <div class="comment" id="comment-four" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
+              <span class="comment--title">Aesthetics</span>
+              <p class="comment--description">There’s still an enormous amount of white space on the right side of the question’s card.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </figure>
     <div class="project-subsection-text">
       <p>I had thought that the other campaign detail pages might contain other kinds of useful information that I could draw from for this redesign and, in some cases, they did. However, after reviewing the other campaign details as well, it became clear that the only consistent element across all the pages was a table of recipient information, which happened to appear on the question results subpages for the Custom Survey Detail. Having realized that there was little consistency across the different campaign detail pages in our app, I decided to take a look at some other web-based surveying apps to see if they could provide additional insights as to how to improve our Custom Survey Detail page.</p>
       <p>Even though its interface was overwhelming in a number of different ways, I spent a good amount of time exploring SurveyMonkey’s results view along with Google Forms’ results view. I was impressed by the amount of information that each provided me and was particularly impressed by both app’s aggregate response visualizations as well as their individual responses features, which, in both apps, allowed the survey creator to paginate through their survey results on a person-by-person basis.</p>
     </div>
-    <figure class="project-image--full-width">
-      <div class="two-image-layout">
-        <img src="img/projects/campaign-results/inspiration/google-forms-summary.png" alt="Screenshot of Google Forms’ “Summary” responses view">
-        <img src="img/projects/campaign-results/inspiration/google-forms-individual.png" alt="Screenshot of Google Forms’ “Individual” responses view">
+    <figure class="project-slider--medium-width">
+      <div class="medium-width-slider-image" data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart">
+        <div>
+          <img src="img/projects/campaign-results/inspiration/google-forms-summary.png" alt="Screenshot of Google Forms’ “Summary” responses view">
+        </div>
+        <figcaption><span>Inspiration #1:</span>Screenshot of Google Forms’ “Summary” responses view.</figcaption>
       </div>
-      <figcaption>Screenshots of Google Forms’ “Summary” responses view (left) and “Individual” responses view (right).</figcaption>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/campaign-results/inspiration/google-forms-individual.png" alt="Screenshot of Google Forms’ “Individual” responses view">
+        </div>
+        <figcaption><span>Inspiration #2:</span>Screenshot of Google Forms’ “Individual” responses view.</figcaption>
+      </div>
     </figure>
     <div class="project-subsection-text">
       <p>After reviewing UserIQ’s different campaign detail pages as well as these other surveying apps’ results views, I thought I had a pretty good sense of what kind of information users would find helpful on the new Custom Survey Detail page. Because I was eager for our product team to use Agile methodologies more in our design and development process, I formulated these things into job stories, which helped me better understand the value of each of the features I had seen from a user’s perspective.</p>
     </div>
-    <figure class="project-image--full-width">
-      <h6>Custom Survey Detail Job Stories</h6>
+    <figure class="full-width-image-background">
+      <h4>Custom Survey Detail Job Stories</h4>
       <div class="two-column-layout">
         <div class="two-column-layout__column">
-          <div class="job-story">
+          <div class="job-story" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart">
             <span>Search Results</span>
-            <p>When viewing my custom survey results, I want to be able to search the results so that I can find a specific response that I’m looking for.</p>
+            <p>When viewing my custom survey results, I want to be able to search the results so that I can find a specific response that I’m looking for.<br/><br/></p>
           </div>
-          <div class="job-story">
+          <div class="job-story" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart">
             <span>Export Results</span>
-            <p>When viewing my custom survey results, I want to be able to export the results so that I can easily share the survey insights with my team members.</p>
+            <p>When viewing my custom survey results, I want to be able to export the results so that I can easily share the survey insights with my team members.<br/><br/></p>
           </div>
-          <div class="job-story">
+          <div class="job-story" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart">
             <span>Sort Results</span>
-            <p>When viewing my custom survey results in a table view, I want to be able to sort the results so that I can quickly scan them for a particular account, date, or action taken.</p>
+            <p>When viewing my custom survey results in a table view, I want to be able to sort the results so that I can quickly scan them for a particular account, date, or action taken.<br/><br/></p>
           </div>
-          <div class="job-story">
-            <span>Aggregate Data and Individual Responses Per Question</span>
+          <div class="job-story" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart">
+            <span>Aggregate Data & Individual Responses</span>
             <p>When viewing my custom survey results, I want to be able to see both aggregate data for each question and individual responses to each question so that I can quickly gain general insights and also view specific details if I want.</p>
           </div>
         </div>
         <div class="two-column-layout__column">
-          <div class="job-story">
+          <div class="job-story" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
             <span>Total Number of Respondents</span>
             <p>When viewing my custom survey results, I want to be able to see the total number of respondents so that I can monitor whether that number is growing and know how ubiquitous the survey results are.</p>
           </div>
-          <div class="job-story">
+          <div class="job-story" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
             <span>Total Percentage of Audience</span>
             <p>When viewing my custom survey results, I want to be able to see the total percentage of my audience so that I can see how much or how little the survey results reflect my audience’s opinions.</p>
           </div>
-          <div class="job-story">
+          <div class="job-story" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
             <span>Survey Period</span>
             <p>When viewing my custom survey results, I want to be able to see the dates the survey launched and ended and the number of days active so that I can get a sense of how long my audience had to respond.</p>
           </div>
-          <div class="job-story">
+          <div class="job-story" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
             <span>Campaign Status</span>
             <p>When viewing my custom survey results, I want to be able to see whether or not my custom survey is scheduled, active, or paused so that I can know whether or not the results are going to change.</p>
           </div>
@@ -169,62 +216,94 @@ CAMPAIGN RESULTS PROJECT PAGE
 
     <div class="project-subsection-text">
       <img class="project-subsection-number" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart" src="img/projects/subsection-numbers/subsection-two.svg">
-      <h6 class="project-subsection-name">Sketches</h6>
+      <h5 class="project-subsection-name">Sketches</h5>
       <p>After compiling this list of job stories, I had enough well-formed ideas for what the layout of the new Custom Survey Detail page might look like that my sketches were essentially just variations of the same design. I wanted to utilize our app’s tab pattern again with more broad information about the campaign’s status and response rate appearing on the first tab and with more specific information about the campaign’s questions appearing on the second tab.</p>
       <p>I wondered whether I should move the visualizations that I was planning on showing for each question’s responses from the first tab to the second tab though since this seemed to be the information that users cared about viewing the most. As I explored in my second sketch, doing this would give me more room to include an individual responses feature similar to the ones I had seen in SurveyMonkey and Google Forms on the second tab.</p>
     </div>
-    <figure class="project-image--full-width">
-      <div class="one-image-layout">
-        <img src="img/projects/campaign-results/sketch.png" alt="My initial two sketches for the new Custom Survey Detail page.">
+    <figure class="project-slider--medium-width sketch-slider">
+      <div class="medium-width-slider-image" data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart">
+        <div>
+          <img src="img/projects/campaign-results/sketches/sketch-1.png" alt="Early sketch for the Custom Survey Detail page.">
+        </div>
+        <figcaption><span>Sketch #1:</span>One of my initial sketches for the new Custom Survey Detail page.</figcaption>
       </div>
-      <figcaption>My initial two sketches for the new Custom Survey Detail page.</figcaption>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/campaign-results/sketches/sketch-2.png" alt="Early sketch for the Custom Survey Detail page.">
+        </div>
+        <figcaption><span>Sketch #2:</span>One of my initial sketches for the new Custom Survey Detail page.</figcaption>
+      </div>
     </figure>
 
     <div class="project-subsection-text">
       <img class="project-subsection-number" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart" src="img/projects/subsection-numbers/subsection-three.svg">
-      <h6 class="project-subsection-name">Wireframes, More Sketches, & Mockups</h6>
+      <h5 class="project-subsection-name">Wireframes, More Sketches, & Mockups</h5>
       <p>While wireframing my two initial sketches, I realized that moving the visualizations for each question’s responses to the first tab probably wasn’t a good idea because there would be instances where users would create custom surveys with lots of questions and would later have to scroll down the Custom Survey Detail page for a long time in order to view all the results of their survey. I also realized that I had left out the table of recipient information, which I thought was an important thing to carry over from the existing campaign detail pages in UserIQ.</p>
       <p>Having come to these realizations, I started to sketch out a new design that placed the table of recipient information on the first tab, leaving the visualizations for each question’s responses on the second tab, and that also had the option for a third tab containing a version of the individual responses feature.</p>
       <p>After I had wireframed the new design, JD and I asked our Director of Software Engineering, Chris Morgan, if there were any data points in it that the engineering team wouldn’t be able to provide. He answered that it would be difficult for them to calculate the campaign launch date and number of days that the campaign had been active because users were able to pause and activate campaigns whenever they pleased. Thankfully for us, this was the only information in the new design that he had any hesitations about though.</p>
     </div>
-    <figure class="project-image--full-width">
-      <div class="three-image-layout">
-        <img src="img/projects/campaign-results/wireframes/summary.png" alt="The Summary tab of the wireframes I put together for the new Custom Survey Detail page.">
-        <img src="img/projects/campaign-results/wireframes/all-responses.png" alt="The All Responses tab of the wireframes I put together for the new Custom Survey Detail page.">
-        <img src="img/projects/campaign-results/wireframes/individual-responses.png" alt="The Individual Responses tab of the wireframes I put together for the new Custom Survey Detail page.">
+    <figure class="project-slider--medium-width">
+      <div class="medium-width-slider-image" data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart">
+        <div>
+          <img src="img/projects/campaign-results/wireframes/summary.png" alt="The Summary tab wireframe for the new Custom Survey Detail page.">
+        </div>
+        <figcaption><span>Wireframe #1:</span>The Summary tab wireframe for the new Custom Survey Detail page.</figcaption>
       </div>
-      <figcaption>The wireframes I put together for the new Custom Survey Detail page.</figcaption>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/campaign-results/wireframes/all-responses.png" alt="The All Responses tab wireframe for the new Custom Survey Detail page.">
+        </div>
+        <figcaption><span>Wireframe #2:</span>The All Responses tab wireframe for the new Custom Survey Detail page.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/campaign-results/wireframes/individual-responses.png" alt="The Individual Responses tab wireframe for the new Custom Survey Detail page.">
+        </div>
+        <figcaption><span>Wireframe #3:</span>The Individual Responses tab wireframe for the new Custom Survey Detail page.</figcaption>
+      </div>
     </figure>
     <div class="project-subsection-text">
       <p>After getting a quick confirmation from our customer success team that the new design would resolve most of the enhancement requests they had received for our Custom Survey Detail page, I put together a checklist of things I would need to do in order to create the final mockups with JD’s input. In addition to removing the information that Chris had said the engineering team wouldn’t be able to include, JD suggested that I explore other options for displaying the free response data on the “All Responses” tab and for emphasizing the respondents’ selected answers on the “Individual Responses” tab. I took his advice and made adjustments to those features in ways that made them both much better.</p>
     </div>
-    <figure class="project-image--full-width">
-      <div class="three-image-layout">
-        <img src="img/projects/campaign-results/mockups/summary.png" alt="The Summary tab of the final mockups for the new Custom Survey Detail page.">
-        <img src="img/projects/campaign-results/mockups/all-responses.png" alt="The All Responses tab of the final mockups for the new Custom Survey Detail page.">
-        <img src="img/projects/campaign-results/mockups/individual-responses.png" alt="The Individual Responses tab of the final mockups for the new Custom Survey Detail page.">
+    <figure class="project-slider--medium-width">
+      <div class="medium-width-slider-image" data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart">
+        <div>
+          <img src="img/projects/campaign-results/mockups/summary.png" alt="The Summary tab mockup for the new Custom Survey Detail page.">
+        </div>
+        <figcaption><span>Mockup #1:</span>The Summary tab mockup for the new Custom Survey Detail page.</figcaption>
       </div>
-      <figcaption>The final mockups for the new Custom Survey Detail page.</figcaption>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/campaign-results/mockups/all-responses.png" alt="The All Responses tab mockup for the new Custom Survey Detail page.">
+        </div>
+        <figcaption><span>Mockup #2:</span>The All Responses tab mockup for the new Custom Survey Detail page.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/campaign-results/mockups/individual-responses.png" alt="The Individual Responses tab mockup for the new Custom Survey Detail page.">
+        </div>
+        <figcaption><span>Mockup #3:</span>The Individual Responses tab mockup for the new Custom Survey Detail page.</figcaption>
+      </div>
     </figure>
   </section>
 
   <section class="project-section solution-section">
     <div class="project-section-text">
       <span class="project-section-name">Solution</span>
-      <h4 class="project-section-title">Closing the feedback loop on users’<br/>custom surveys</h4>
+      <h3 class="project-section-title">Closing the feedback loop on users’<br/>custom surveys</h3>
       <p>Once the new Custom Survey Detail page was released, the feedback around it was largely positive with users now being able to see more in-depth information about who had responded to or dismissed the custom survey along with trends showing how those recipients had responded to particular questions.</p>
       <p>There was some confusion about which survey actions constituted a “survey view,” which I think we could have avoided if we had taken more time to perform user testing. For a campaign detail page that wasn’t offering many details before, our redesign was an improvement though and also helped pave the way for future improvements to the other campaign detail pages.</p>
     </div>
   </section>
 
   <section class="work-section">
-    <h3 class="section-title">Work</h3>
+    <h2 class="section-title">Work</h2>
     <div class="projects-grid">
       <div class="project" id="project-one" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart">
         <a href="/creation-flows" class="project-link"><span></span></a>
         <div class="project-text">
           <span class="project-name">UserIQ</span>
-          <h4 class="project-title">Creation<br/>Flows</h4>
+          <h3 class="project-title">Creation<br/>Flows</h3>
           <span class="text-link project-text-link">View project</span>
         </div>
       </div>
@@ -232,7 +311,7 @@ CAMPAIGN RESULTS PROJECT PAGE
         <a href="/campaign-results" class="project-link"><span></span></a>
         <div class="project-text">
           <span class="project-name">UserIQ</span>
-          <h4 class="project-title">Campaign Results</h4>
+          <h3 class="project-title">Campaign<br/>Results</h3>
           <span class="text-link project-text-link">View project</span>
         </div>
       </div>
@@ -240,49 +319,49 @@ CAMPAIGN RESULTS PROJECT PAGE
         <a href="/tasks-and-playbooks" class="project-link"><span></span></a>
         <div class="project-text">
           <span class="project-name">UserIQ</span>
-          <h4 class="project-title">Tasks & Playbooks</h4>
+          <h3 class="project-title">Tasks & Playbooks</h3>
           <span class="text-link project-text-link">View project</span>
         </div>
       </div>
       <div class="project project-placeholder" id="project-four" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart">
         <div class="project-text">
           <span class="project-name">OneTrust</span>
-          <h4 class="project-title">Cookie Banner Wizard</h4>
+          <h3 class="project-title">Cookie Banner Wizard</h3>
           <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
         </div>
       </div>
       <div class="project project-placeholder" id="project-five" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
         <div class="project-text">
           <span class="project-name">OneTrust</span>
-          <h4 class="project-title">Marketing Landing Page</h4>
+          <h3 class="project-title">Marketing Landing Page</h3>
           <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
         </div>
       </div>
       <div class="project project-placeholder" id="project-six" data-aos="slide-up" data-aos-duration="1500" data-aos-easing="ease-out-quart">
         <div class="project-text">
           <span class="project-name">OneTrust</span>
-          <h4 class="project-title">Cookie Banner Gallery</h4>
+          <h3 class="project-title">Cookie Banner Gallery</h3>
           <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
         </div>
       </div>
       <!-- <div class="project project-placeholder" id="project-four" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart">
         <div class="project-text">
           <span class="project-name">Konquer Jiu Jitsu</span>
-          <h4 class="project-title">E-Commerce Site</h4>
+          <h3 class="project-title">E-Commerce Site</h3>
           <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
         </div>
       </div>
       <div class="project project-placeholder" id="project-five" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
         <div class="project-text">
           <span class="project-name">Ballad</span>
-          <h4 class="project-title">Web & Mobile App</h4>
+          <h3 class="project-title">Web & Mobile App</h3>
           <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
         </div>
       </div>
       <div class="project project-placeholder" id="project-six" data-aos="slide-up" data-aos-duration="1500" data-aos-easing="ease-out-quart">
         <div class="project-text">
           <span class="project-name">Oliver Pluff & Co.</span>
-          <h4 class="project-title">E-Commerce App</h4>
+          <h3 class="project-title">E-Commerce App</h3>
           <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
         </div>
       </div> -->
@@ -291,8 +370,8 @@ CAMPAIGN RESULTS PROJECT PAGE
 
   <section class="contact-section">
     <div class="contact-text">
-      <h5>Get in touch</h5>
-      <p>Interested in chatting? Feel free to send me a message and I'll get back to<br/>you when I can.</p>
+      <h3>Get in touch</h3>
+      <p>Interested in chatting? Feel free to send me a message and I'll get back to you when I can.</p>
       <a href="/contact" class="text-link">Contact me</a>
     </div>
   </section>

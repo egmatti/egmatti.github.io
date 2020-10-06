@@ -2,147 +2,249 @@
 // IMAGES
 // ==========================================
 
+.project-page ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+
+.project-page ::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(#121212,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
 .project-page .project-image--medium-width {
   @include grid-parent();
-  grid-template-columns: 12.5% 6.25% 6.25% 12.5% 12.5% 12.5% 12.5% 6.25% 6.25% 12.5%;
-  margin: 67.5px auto;
+  margin: 75px auto;
 
   img {
     @include box-shadow();
-    @include grid-child(3,9);
+    @include grid-child(3,7);
     display: block;
-    max-width: 900px;
     object-fit: contain;
     width: 100%;
   }
 
   figcaption {
-    @include grid-child(3,9);
+    @include grid-child(3,7);
     @extend p;
+    color: $black;
     display: block;
+    font-family: $font-bold;
     font-size: 14px;
-    margin-top: 33.75px;
+    line-height: 21px;
+    margin-top: 45px;
     text-align: center;
+
+    span {
+      color: $medium-gray;
+      font-family: $font-medium;
+      letter-spacing: 1.225px;
+      margin-right: 5px;
+      text-transform: uppercase;
+    }
   }
 }
 
-.project-page .project-image--full-width {
-  background: $color-full-width-image-background;
-  box-sizing: border-box;
-  height: auto;
-  margin: 90px 0;
-  padding: 67.5px 180px 56.25px 180px;
+.project-page .project-slider--medium-width {
+  margin: 75px auto;
   width: 100%;
+}
 
-  h6 {
-    margin-bottom: 45px;
+.project-page .medium-width-slider-image {
+  @include grid-parent();
+  height: auto;
 
-    &:not(:first-of-type) {
-      margin-top: 56.25px;
-    }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  div {
+    @include box-shadow();
+    @include flexbox($align: center, $justify: center);
+    @include grid-child(3,7);
+    display: block;
+    height: 450px;
+    overflow: auto;
+
+  }
+
+  img {
+    width: 100%;
   }
 
   figcaption {
+    @include grid-child(3,7);
     @extend p;
+    color: $black;
     display: block;
+    font-family: $font-bold;
     font-size: 14px;
-    margin-top: 33.75px;
+    line-height: 21px;
+    margin-top: 45px;
     text-align: center;
+
+    span {
+      color: $medium-gray;
+      font-family: $font-medium;
+      letter-spacing: 1.225px;
+      margin-right: 5px;
+      text-transform: uppercase;
+    }
   }
 }
 
-.project-page .heuristic-evaluation {
+.project-page .sketch-slider .medium-width-slider-image div {
+  box-shadow: none;
+}
+
+.project-page .project-slider--medium-width .slick-prev {
+  align-items: stretch;
+  background: none;
+  border: none;
+  height: 60px;
+  left: 180px;
+  outline-style: none;
+  padding: 0;
+  position: absolute;
+  top: 40%;
+  transform: scale(0.925);
+  width: 60px;
+  z-index: 100;
+}
+
+.project-page .project-slider--medium-width .slick-next {
+  align-items: stretch;
+  background: none;
+  border: none;
+  height: 60px;
+  outline-style: none;
+  padding: 0;
+  position: absolute;
+  right: 180px;
+  top: 40%;
+  transform: scale(0.925);
+  width: 60px;
+  z-index: 100;
+}
+
+.project-page .full-width-image-background {
+  background: $color-full-width-image-background;
+  box-sizing: border-box;
+  height: auto;
+  margin: 100px 0;
+  padding: 75px 180px 75px 180px;
+  width: 100%;
+
+  h4 {
+    margin-bottom: 37px;
+  }
+}
+
+.project-page .full-width-slider-background {
+  background: $color-full-width-image-background;
+  box-sizing: border-box;
+  height: auto;
+  margin: 100px 0 0 0;
+  padding: 75px 180px 135px 180px;
+  width: 100%;
+
+  h4 {
+    margin-bottom: 37px;
+  }
+}
+
+.project-page .full-width-layout {
   @include flexbox($align: flex-start, $justify: space-between);
   width: 100%;
 
-  @include m(screenshot) {
+  @include m(image) {
     @include box-shadow();
+    display: block;
     object-fit: contain;
-    width: 60%;
+    width: 66.66%;
   }
 
-  @include m(comments) {
-    object-fit: contain;
-    width: 35.648%;
-  }
-}
-
-.project-page .one-image-layout {
-  @include flexbox($align: flex-start);
-  width: 100%;
-
-  img {
-    @include box-shadow();
-    object-fit: contain;
-    width: 46.875%;
+  @include m(description) {
+    width: 29.166%;
   }
 }
 
-.project-page .two-image-layout {
-  @include flexbox($align: flex-start, $justify: space-between);
-  width: 100%;
+.project-page .project-slider--full-width-nav {
+  height: auto;
+  margin: -65.9375px auto 100px auto !important;
+}
+
+.project-page .nav-slide {
+  margin-right: 30px;
+  width: 135px !important;
+
+  span {
+    font-family: $font-regular;
+    font-size: 14px;
+    line-height: 17.5px;
+  }
 
   img {
     @include box-shadow();
-    object-fit: contain;
-    width: 46.875%;
+    margin-top: 5px;
+    max-height: 100px;
+    overflow: hidden;
+    width: 135px;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:focus {
+    outline: none;
   }
 }
 
-.project-page .three-image-layout {
-  @include flexbox($align: flex-start, $justify: space-between);
-  width: 100%;
-
-  img {
-    @include box-shadow();
-    object-fit: contain;
-    width: 30.55%;
-  }
+.project-page .project-slider--full-width-nav .slick-current span {
+    font-family: $font-bold;
 }
 
-.project-page .four-image-layout {
-  @include flexbox($align: flex-start, $justify: space-between, $wrap: wrap);
-  width: 100%;
 
-  img {
-    @include box-shadow();
-    object-fit: contain;
-    width: 46.875%;
-
-    &:not(:nth-of-type(1)) {
-      margin-top: 45px;
-    }
-
-    &:not(:nth-of-type(2)) {
-      margin-top: 45px;
-    }
-  }
+.project-page .figure-name {
+  color: $medium-gray;
+  font-family: $font-medium;
+  font-size: 16.5px;
+  letter-spacing: 1.44375px;
+  text-transform: uppercase;
 }
 
-.project-page .six-image-layout {
-  @include flexbox($align: flex-start, $justify: space-between, $wrap: wrap);
-  width: 100%;
+.project-page .figure-title {
+  margin-top: 12.375px;
+}
 
-  img {
-    @include box-shadow();
-    object-fit: contain;
-    width: 46.875%;
+.project-page .figure-description {
+  @extend p;
+  font-size: 14px;
+  line-height: 17.5px;
+  margin-top: 20px;
+}
 
-    &:nth-of-type(3) {
-      margin-top: 45px;
-    }
+.project-page .comment {
+  margin-top: 25px;
 
-    &:nth-of-type(4) {
-      margin-top: 45px;
-    }
+  @include m(title) {
+    color: $black;
+    font-family: $font-medium;
+    font-size: 14px;
+    letter-spacing: 1.225px;
+    overflow: hidden;
+    text-transform: uppercase;
+  }
 
-    &:nth-of-type(5) {
-      margin-top: 45px;
-    }
-
-    &:nth-of-type(6) {
-      margin-top: 45px;
-    }
+  @include m(description) {
+    @extend p;
+    font-size: 14px;
+    line-height: 17.5px;
+    margin-top: 5px;
+    overflow: hidden;
   }
 }
 
@@ -167,22 +269,26 @@
 }
 
 .job-story {
-  margin-bottom: 33.75px;
+  margin-bottom: 37px;
 
   &:last-of-type {
-    margin-bottom: 11.25px;
+    margin-bottom: 0px;
   }
 
   span {
+    color: $black;
     display: block;
-    font-family: $font-bold;
+    font-family: $font-medium;
     font-size: 14px;
-    margin-bottom: 7.5px;
+    letter-spacing: 1.225px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-transform: uppercase;
   }
 
   p {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 17.5px;
   }
 }
 
@@ -190,10 +296,14 @@
   width: 100%;
 
   span {
+    color: $black;
     display: block;
-    font-family: $font-bold;
-    font-size: 16px;
-    margin-bottom: 12px;
+    font-family: $font-medium;
+    font-size: 14px;
+    letter-spacing: 1.225px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-transform: uppercase;
   }
 
   ul li {
@@ -242,10 +352,14 @@
   width: 100%;
 
   span {
+    color: $black;
     display: block;
-    font-family: $font-bold;
+    font-family: $font-medium;
     font-size: 18px;
+    letter-spacing: 1.575px;
     margin-bottom: 45px;
+    overflow: hidden;
+    text-transform: uppercase;
   }
 
   img {

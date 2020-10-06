@@ -5,6 +5,7 @@
 .button {
   @include box-shadow($c: rgba($black, 0.1));
   background: $color-button;
+  border-color: $color-button !important;
   border-radius: 3px;
   cursor: pointer;
   display: inline-block;
