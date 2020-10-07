@@ -69,6 +69,10 @@
   }
 }
 
+.project-page .last-project-subsection-paragraph p {
+  margin-bottom: 75px;
+}
+
 .project-page .project-role {
    @include grid-child(7,9);
    left: 75%;

@@ -1,0 +1,95 @@
+// ==========================================
+// MARKETING LANDING PAGE PROJECT PAGE
+// ==========================================
+
+#marketing-landing-page .hero-background {
+  @include gradient($burnt-orange, $tangerine);
+}
+
+#marketing-landing-page .project-role__label {
+   color: $burnt-orange;
+}
+
+#marketing-landing-page blockquote span {
+  color: $burnt-orange;
+}
+
+#marketing-landing-page #comment-one:before {
+  content: url('../img/projects/creation-flows/heuristic-evaluation/indices/1.svg');
+  float: left;
+  margin-right: 10px;
+}
+
+#marketing-landing-page #comment-two:before {
+  content: url('../img/projects/creation-flows/heuristic-evaluation/indices/2.svg');
+  float: left;
+  margin-right: 10px;
+}
+
+#marketing-landing-page #comment-three:before {
+  content: url('../img/projects/creation-flows/heuristic-evaluation/indices/3.svg');
+  float: left;
+  margin-right: 10px;
+}
+
+#marketing-landing-page #comment-four:before {
+  content: url('../img/projects/creation-flows/heuristic-evaluation/indices/4.svg');
+  float: left;
+  margin-right: 10px;
+}
+
+#marketing-landing-page #comment-five:before {
+  content: url('../img/projects/creation-flows/heuristic-evaluation/indices/5.svg');
+  float: left;
+  margin-right: 10px;
+}
+
+#marketing-landing-page .slick-prev {
+
+  &:before {
+    content: url('../img/projects/creation-flows/carousel-arrows/previous-arrow.svg') !important;
+    cursor: pointer;
+  }
+}
+
+#marketing-landing-page .slick-next {
+
+  &:before {
+    content: url('../img/projects/creation-flows/carousel-arrows/next-arrow.svg') !important;
+    cursor: pointer;
+  }
+}
+
+#marketing-landing-page .prototype-slider .slick-prev {
+  align-items: stretch;
+  background: none;
+  border: none;
+  height: 60px;
+  left: calc(50% - 260px);
+  outline-style: none;
+  padding: 0;
+  position: absolute;
+  top: 550px;
+  transform: scale(0.925);
+  width: 60px;
+  z-index: 500;
+}
+
+#marketing-landing-page .prototype-slider .slick-next {
+  align-items: stretch;
+  background: none;
+  border: none;
+  height: 60px;
+  outline-style: none;
+  padding: 0;
+  position: absolute;
+  right: calc(50% - 245px);
+  top: 550px;
+  transform: scale(0.925);
+  width: 60px;
+  z-index: 500;
+}
+
+#marketing-landing-page .project-slider--full-width-nav {
+  width: 300px;
+}

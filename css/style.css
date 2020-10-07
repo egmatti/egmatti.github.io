@@ -547,7 +547,7 @@ h6 {
   line-height: 25px;
 }
 
-p, #contact-page .contact-form div textarea, #contact-page .contact-form div input, #contact-page .contact-form div label, .project-page .project-subsection-text ol, .project-page .project-role__description, .approach ul li, .project-page .comment--description, .project-page .figure-description, .project-page .medium-width-slider-image figcaption, .project-page .project-image--medium-width figcaption {
+p, #contact-page .contact-form div textarea, #contact-page .contact-form div input, #contact-page .contact-form div label, .project-page .project-subsection-text ol, .project-page .project-role__description, .approach ul li, .approach ol li, .project-page .comment--description, .project-page .figure-description, .project-page .mobile-mockup figcaption, .project-page .medium-width-slider-image figcaption, .project-page .project-image--medium-width figcaption {
   color: #484848;
   font-family: "Metropolis Regular", Helvetica, sans-serif;
   font-size: 20px;
@@ -575,8 +575,12 @@ p, #contact-page .contact-form div textarea, #contact-page .contact-form div inp
 }
 
 a {
+  color: #00CED1;
   outline: none;
   text-decoration: none;
+}
+a:hover {
+  color: #00C2C6;
 }
 
 .text-link {
@@ -741,6 +745,59 @@ a {
   z-index: 100;
 }
 
+.project-page .mobile-mockup {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  margin: 75px auto;
+  width: 100%;
+}
+.project-page .mobile-mockup figcaption {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3/7;
+  color: #121212;
+  display: block;
+  font-family: "Metropolis Bold", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 45px;
+  text-align: center;
+}
+.project-page .mobile-mockup figcaption span {
+  color: #898989;
+  font-family: "Metropolis Medium", Helvetica, sans-serif;
+  letter-spacing: 1.225px;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+.project-page .mobile-device-frame {
+  align-items: start;
+  display: flex;
+  justify-content: center;
+  background: url(../img/projects/mobile-device.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 555px;
+  width: 270px;
+}
+.project-page .mobile-device-frame div {
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+  box-shadow: 0px 3px 8px 0px rgba(18, 18, 18, 0.25);
+  border-radius: 15px;
+  height: 94%;
+  margin-top: 15px;
+  overflow: auto;
+  width: 90%;
+}
+.project-page .mobile-device-frame img {
+  width: 100%;
+}
+
 .project-page .full-width-image-background {
   background: #F6F6F6;
   box-sizing: border-box;
@@ -891,7 +948,7 @@ a {
   overflow: hidden;
   text-transform: uppercase;
 }
-.job-story p, .job-story #contact-page .contact-form div textarea, #contact-page .contact-form div .job-story textarea, .job-story #contact-page .contact-form div input, #contact-page .contact-form div .job-story input, .job-story #contact-page .contact-form div label, #contact-page .contact-form div .job-story label, .job-story .project-page .project-subsection-text ol, .project-page .project-subsection-text .job-story ol, .job-story .project-page .project-role__description, .project-page .job-story .project-role__description, .job-story .approach ul li, .approach ul .job-story li, .job-story .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width .job-story figcaption, .job-story .project-page .medium-width-slider-image figcaption, .project-page .medium-width-slider-image .job-story figcaption, .job-story .project-page .figure-description, .project-page .job-story .figure-description, .job-story .project-page .comment--description, .project-page .job-story .comment--description {
+.job-story p, .job-story #contact-page .contact-form div textarea, #contact-page .contact-form div .job-story textarea, .job-story #contact-page .contact-form div input, #contact-page .contact-form div .job-story input, .job-story #contact-page .contact-form div label, #contact-page .contact-form div .job-story label, .job-story .project-page .project-subsection-text ol, .project-page .project-subsection-text .job-story ol, .job-story .project-page .project-role__description, .project-page .job-story .project-role__description, .job-story .approach ul li, .approach ul .job-story li, .job-story .approach ol li, .approach ol .job-story li, .job-story .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width .job-story figcaption, .job-story .project-page .medium-width-slider-image figcaption, .project-page .medium-width-slider-image .job-story figcaption, .job-story .project-page .mobile-mockup figcaption, .project-page .mobile-mockup .job-story figcaption, .job-story .project-page .figure-description, .project-page .job-story .figure-description, .job-story .project-page .comment--description, .project-page .job-story .comment--description {
   font-size: 14px;
   line-height: 17.5px;
 }
@@ -909,17 +966,17 @@ a {
   overflow: hidden;
   text-transform: uppercase;
 }
-.approach ul li {
+.approach ul li, .approach ol li {
   font-size: 14px;
   list-style: none;
   margin: 0 0 0 1.5em;
   padding-bottom: 4.85px;
   position: relative;
 }
-.approach ul li:last-of-type {
+.approach ul li:last-of-type, .approach ol li:last-of-type {
   padding-bottom: 0;
 }
-.approach ul li:before {
+.approach ul li:before, .approach ol li:before {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -932,10 +989,10 @@ a {
   top: -4.75px;
   width: 2em;
 }
-.approach ul li ul li:first-of-type {
+.approach ul li ul li:first-of-type, .approach ul li ol li:first-of-type, .approach ol li ul li:first-of-type, .approach ol li ol li:first-of-type {
   padding-top: 4.85px;
 }
-.approach ul li ul li:before {
+.approach ul li ul li:before, .approach ul li ol li:before, .approach ol li ul li:before, .approach ol li ol li:before {
   content: "-";
 }
 
@@ -979,7 +1036,7 @@ blockquote:before {
   margin-top: -10px;
   text-align: center;
 }
-blockquote p, blockquote #contact-page .contact-form div textarea, #contact-page .contact-form div blockquote textarea, blockquote #contact-page .contact-form div input, #contact-page .contact-form div blockquote input, blockquote #contact-page .contact-form div label, #contact-page .contact-form div blockquote label, blockquote .project-page .project-subsection-text ol, .project-page .project-subsection-text blockquote ol, blockquote .project-page .project-role__description, .project-page blockquote .project-role__description, blockquote .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width blockquote figcaption, blockquote .project-page .medium-width-slider-image figcaption, .project-page .medium-width-slider-image blockquote figcaption, blockquote .project-page .figure-description, .project-page blockquote .figure-description, blockquote .project-page .comment--description, .project-page blockquote .comment--description, blockquote .approach ul li, .approach ul blockquote li {
+blockquote p, blockquote #contact-page .contact-form div textarea, #contact-page .contact-form div blockquote textarea, blockquote #contact-page .contact-form div input, #contact-page .contact-form div blockquote input, blockquote #contact-page .contact-form div label, #contact-page .contact-form div blockquote label, blockquote .project-page .project-subsection-text ol, .project-page .project-subsection-text blockquote ol, blockquote .project-page .project-role__description, .project-page blockquote .project-role__description, blockquote .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width blockquote figcaption, blockquote .project-page .medium-width-slider-image figcaption, .project-page .medium-width-slider-image blockquote figcaption, blockquote .project-page .mobile-mockup figcaption, .project-page .mobile-mockup blockquote figcaption, blockquote .project-page .figure-description, .project-page blockquote .figure-description, blockquote .project-page .comment--description, .project-page blockquote .comment--description, blockquote .approach ul li, .approach ul blockquote li, blockquote .approach ol li, .approach ol blockquote li {
   -ms-grid-column: 4;
   -ms-grid-column-span: 4;
   grid-column: 4/8;
@@ -1575,7 +1632,7 @@ footer {
   color: #ffffff;
   margin: 0;
 }
-#home-page .hero-text p, #home-page .hero-text #contact-page .contact-form div textarea, #contact-page .contact-form div #home-page .hero-text textarea, #home-page .hero-text #contact-page .contact-form div input, #contact-page .contact-form div #home-page .hero-text input, #home-page .hero-text #contact-page .contact-form div label, #contact-page .contact-form div #home-page .hero-text label, #home-page .hero-text .project-page .project-subsection-text ol, .project-page .project-subsection-text #home-page .hero-text ol, #home-page .hero-text .project-page .project-role__description, .project-page #home-page .hero-text .project-role__description, #home-page .hero-text .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width #home-page .hero-text figcaption, #home-page .hero-text .project-page .medium-width-slider-image figcaption, .project-page .medium-width-slider-image #home-page .hero-text figcaption, #home-page .hero-text .project-page .figure-description, .project-page #home-page .hero-text .figure-description, #home-page .hero-text .project-page .comment--description, .project-page #home-page .hero-text .comment--description, #home-page .hero-text .approach ul li, .approach ul #home-page .hero-text li {
+#home-page .hero-text p, #home-page .hero-text #contact-page .contact-form div textarea, #contact-page .contact-form div #home-page .hero-text textarea, #home-page .hero-text #contact-page .contact-form div input, #contact-page .contact-form div #home-page .hero-text input, #home-page .hero-text #contact-page .contact-form div label, #contact-page .contact-form div #home-page .hero-text label, #home-page .hero-text .project-page .project-subsection-text ol, .project-page .project-subsection-text #home-page .hero-text ol, #home-page .hero-text .project-page .project-role__description, .project-page #home-page .hero-text .project-role__description, #home-page .hero-text .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width #home-page .hero-text figcaption, #home-page .hero-text .project-page .medium-width-slider-image figcaption, .project-page .medium-width-slider-image #home-page .hero-text figcaption, #home-page .hero-text .project-page .mobile-mockup figcaption, .project-page .mobile-mockup #home-page .hero-text figcaption, #home-page .hero-text .project-page .figure-description, .project-page #home-page .hero-text .figure-description, #home-page .hero-text .project-page .comment--description, .project-page #home-page .hero-text .comment--description, #home-page .hero-text .approach ul li, .approach ul #home-page .hero-text li, #home-page .hero-text .approach ol li, .approach ol #home-page .hero-text li {
   -ms-grid-column: 5;
   -ms-grid-column-span: 3;
   grid-column: 5/8;
@@ -1692,14 +1749,18 @@ footer {
   margin: 30px 0 50px 0;
 }
 
-.project-page .project-section-text p, .project-page .project-section-text #contact-page .contact-form div textarea, #contact-page .contact-form div .project-page .project-section-text textarea, .project-page .project-section-text #contact-page .contact-form div input, #contact-page .contact-form div .project-page .project-section-text input, .project-page .project-section-text #contact-page .contact-form div label, #contact-page .contact-form div .project-page .project-section-text label, .project-page .project-section-text .project-subsection-text ol, .project-page .project-subsection-text .project-section-text ol, .project-page .project-section-text .project-role__description, .project-page .project-section-text .project-image--medium-width figcaption, .project-page .project-image--medium-width .project-section-text figcaption, .project-page .project-section-text .medium-width-slider-image figcaption, .project-page .medium-width-slider-image .project-section-text figcaption, .project-page .project-section-text .figure-description, .project-page .project-section-text .comment--description, .project-page .project-section-text .approach ul li, .approach ul .project-page .project-section-text li {
+.project-page .project-section-text p, .project-page .project-section-text #contact-page .contact-form div textarea, #contact-page .contact-form div .project-page .project-section-text textarea, .project-page .project-section-text #contact-page .contact-form div input, #contact-page .contact-form div .project-page .project-section-text input, .project-page .project-section-text #contact-page .contact-form div label, #contact-page .contact-form div .project-page .project-section-text label, .project-page .project-section-text .project-subsection-text ol, .project-page .project-subsection-text .project-section-text ol, .project-page .project-section-text .project-role__description, .project-page .project-section-text .project-image--medium-width figcaption, .project-page .project-image--medium-width .project-section-text figcaption, .project-page .project-section-text .medium-width-slider-image figcaption, .project-page .medium-width-slider-image .project-section-text figcaption, .project-page .project-section-text .mobile-mockup figcaption, .project-page .mobile-mockup .project-section-text figcaption, .project-page .project-section-text .figure-description, .project-page .project-section-text .comment--description, .project-page .project-section-text .approach ul li, .approach ul .project-page .project-section-text li, .project-page .project-section-text .approach ol li, .approach ol .project-page .project-section-text li {
   -ms-grid-column: 3;
   -ms-grid-column-span: 4;
   grid-column: 3/7;
   line-height: 35px;
 }
-.project-page .project-section-text p:not(:first-of-type), .project-page .project-section-text #contact-page .contact-form div textarea:not(:first-of-type), #contact-page .contact-form div .project-page .project-section-text textarea:not(:first-of-type), .project-page .project-section-text #contact-page .contact-form div input:not(:first-of-type), #contact-page .contact-form div .project-page .project-section-text input:not(:first-of-type), .project-page .project-section-text #contact-page .contact-form div label:not(:first-of-type), #contact-page .contact-form div .project-page .project-section-text label:not(:first-of-type), .project-page .project-section-text .project-subsection-text ol:not(:first-of-type), .project-page .project-subsection-text .project-section-text ol:not(:first-of-type), .project-page .project-section-text .project-role__description:not(:first-of-type), .project-page .project-section-text .project-image--medium-width figcaption:not(:first-of-type), .project-page .project-image--medium-width .project-section-text figcaption:not(:first-of-type), .project-page .project-section-text .medium-width-slider-image figcaption:not(:first-of-type), .project-page .medium-width-slider-image .project-section-text figcaption:not(:first-of-type), .project-page .project-section-text .figure-description:not(:first-of-type), .project-page .project-section-text .comment--description:not(:first-of-type), .project-page .project-section-text .approach ul li:not(:first-of-type), .approach ul .project-page .project-section-text li:not(:first-of-type) {
+.project-page .project-section-text p:not(:first-of-type), .project-page .project-section-text #contact-page .contact-form div textarea:not(:first-of-type), #contact-page .contact-form div .project-page .project-section-text textarea:not(:first-of-type), .project-page .project-section-text #contact-page .contact-form div input:not(:first-of-type), #contact-page .contact-form div .project-page .project-section-text input:not(:first-of-type), .project-page .project-section-text #contact-page .contact-form div label:not(:first-of-type), #contact-page .contact-form div .project-page .project-section-text label:not(:first-of-type), .project-page .project-section-text .project-subsection-text ol:not(:first-of-type), .project-page .project-subsection-text .project-section-text ol:not(:first-of-type), .project-page .project-section-text .project-role__description:not(:first-of-type), .project-page .project-section-text .project-image--medium-width figcaption:not(:first-of-type), .project-page .project-image--medium-width .project-section-text figcaption:not(:first-of-type), .project-page .project-section-text .medium-width-slider-image figcaption:not(:first-of-type), .project-page .medium-width-slider-image .project-section-text figcaption:not(:first-of-type), .project-page .project-section-text .mobile-mockup figcaption:not(:first-of-type), .project-page .mobile-mockup .project-section-text figcaption:not(:first-of-type), .project-page .project-section-text .figure-description:not(:first-of-type), .project-page .project-section-text .comment--description:not(:first-of-type), .project-page .project-section-text .approach ul li:not(:first-of-type), .approach ul .project-page .project-section-text li:not(:first-of-type), .project-page .project-section-text .approach ol li:not(:first-of-type), .approach ol .project-page .project-section-text li:not(:first-of-type) {
   margin-top: 30px;
+}
+
+.project-page .last-project-subsection-paragraph p, .project-page .last-project-subsection-paragraph #contact-page .contact-form div textarea, #contact-page .contact-form div .project-page .last-project-subsection-paragraph textarea, .project-page .last-project-subsection-paragraph #contact-page .contact-form div input, #contact-page .contact-form div .project-page .last-project-subsection-paragraph input, .project-page .last-project-subsection-paragraph #contact-page .contact-form div label, #contact-page .contact-form div .project-page .last-project-subsection-paragraph label, .project-page .last-project-subsection-paragraph .project-subsection-text ol, .project-page .project-subsection-text .last-project-subsection-paragraph ol, .project-page .last-project-subsection-paragraph .project-role__description, .project-page .last-project-subsection-paragraph .project-image--medium-width figcaption, .project-page .project-image--medium-width .last-project-subsection-paragraph figcaption, .project-page .last-project-subsection-paragraph .medium-width-slider-image figcaption, .project-page .medium-width-slider-image .last-project-subsection-paragraph figcaption, .project-page .last-project-subsection-paragraph .mobile-mockup figcaption, .project-page .mobile-mockup .last-project-subsection-paragraph figcaption, .project-page .last-project-subsection-paragraph .figure-description, .project-page .last-project-subsection-paragraph .comment--description, .project-page .last-project-subsection-paragraph .approach ul li, .approach ul .project-page .last-project-subsection-paragraph li, .project-page .last-project-subsection-paragraph .approach ol li, .approach ol .project-page .last-project-subsection-paragraph li {
+  margin-bottom: 75px;
 }
 
 .project-page .project-role {
@@ -1752,13 +1813,13 @@ footer {
   margin-bottom: 30px;
 }
 
-.project-page .project-subsection-text p, .project-page .project-subsection-text #contact-page .contact-form div textarea, #contact-page .contact-form div .project-page .project-subsection-text textarea, .project-page .project-subsection-text #contact-page .contact-form div input, #contact-page .contact-form div .project-page .project-subsection-text input, .project-page .project-subsection-text #contact-page .contact-form div label, #contact-page .contact-form div .project-page .project-subsection-text label, .project-page .project-subsection-text ol, .project-page .project-subsection-text .project-image--medium-width figcaption, .project-page .project-image--medium-width .project-subsection-text figcaption, .project-page .project-subsection-text .medium-width-slider-image figcaption, .project-page .medium-width-slider-image .project-subsection-text figcaption, .project-page .project-subsection-text .figure-description, .project-page .project-subsection-text .comment--description, .project-page .project-subsection-text .approach ul li, .approach ul .project-page .project-subsection-text li, .project-page .project-subsection-text .project-role__description {
+.project-page .project-subsection-text p, .project-page .project-subsection-text #contact-page .contact-form div textarea, #contact-page .contact-form div .project-page .project-subsection-text textarea, .project-page .project-subsection-text #contact-page .contact-form div input, #contact-page .contact-form div .project-page .project-subsection-text input, .project-page .project-subsection-text #contact-page .contact-form div label, #contact-page .contact-form div .project-page .project-subsection-text label, .project-page .project-subsection-text ol, .project-page .project-subsection-text .project-image--medium-width figcaption, .project-page .project-image--medium-width .project-subsection-text figcaption, .project-page .project-subsection-text .medium-width-slider-image figcaption, .project-page .medium-width-slider-image .project-subsection-text figcaption, .project-page .project-subsection-text .mobile-mockup figcaption, .project-page .mobile-mockup .project-subsection-text figcaption, .project-page .project-subsection-text .figure-description, .project-page .project-subsection-text .comment--description, .project-page .project-subsection-text .approach ul li, .approach ul .project-page .project-subsection-text li, .project-page .project-subsection-text .approach ol li, .approach ol .project-page .project-subsection-text li, .project-page .project-subsection-text .project-role__description {
   -ms-grid-column: 3;
   -ms-grid-column-span: 4;
   grid-column: 3/7;
   line-height: 35px;
 }
-.project-page .project-subsection-text p:not(:first-of-type), .project-page .project-subsection-text #contact-page .contact-form div textarea:not(:first-of-type), #contact-page .contact-form div .project-page .project-subsection-text textarea:not(:first-of-type), .project-page .project-subsection-text #contact-page .contact-form div input:not(:first-of-type), #contact-page .contact-form div .project-page .project-subsection-text input:not(:first-of-type), .project-page .project-subsection-text #contact-page .contact-form div label:not(:first-of-type), #contact-page .contact-form div .project-page .project-subsection-text label:not(:first-of-type), .project-page .project-subsection-text ol:not(:first-of-type), .project-page .project-subsection-text .project-image--medium-width figcaption:not(:first-of-type), .project-page .project-image--medium-width .project-subsection-text figcaption:not(:first-of-type), .project-page .project-subsection-text .medium-width-slider-image figcaption:not(:first-of-type), .project-page .medium-width-slider-image .project-subsection-text figcaption:not(:first-of-type), .project-page .project-subsection-text .figure-description:not(:first-of-type), .project-page .project-subsection-text .comment--description:not(:first-of-type), .project-page .project-subsection-text .approach ul li:not(:first-of-type), .approach ul .project-page .project-subsection-text li:not(:first-of-type), .project-page .project-subsection-text .project-role__description:not(:first-of-type) {
+.project-page .project-subsection-text p:not(:first-of-type), .project-page .project-subsection-text #contact-page .contact-form div textarea:not(:first-of-type), #contact-page .contact-form div .project-page .project-subsection-text textarea:not(:first-of-type), .project-page .project-subsection-text #contact-page .contact-form div input:not(:first-of-type), #contact-page .contact-form div .project-page .project-subsection-text input:not(:first-of-type), .project-page .project-subsection-text #contact-page .contact-form div label:not(:first-of-type), #contact-page .contact-form div .project-page .project-subsection-text label:not(:first-of-type), .project-page .project-subsection-text ol:not(:first-of-type), .project-page .project-subsection-text .project-image--medium-width figcaption:not(:first-of-type), .project-page .project-image--medium-width .project-subsection-text figcaption:not(:first-of-type), .project-page .project-subsection-text .medium-width-slider-image figcaption:not(:first-of-type), .project-page .medium-width-slider-image .project-subsection-text figcaption:not(:first-of-type), .project-page .project-subsection-text .mobile-mockup figcaption:not(:first-of-type), .project-page .mobile-mockup .project-subsection-text figcaption:not(:first-of-type), .project-page .project-subsection-text .figure-description:not(:first-of-type), .project-page .project-subsection-text .comment--description:not(:first-of-type), .project-page .project-subsection-text .approach ul li:not(:first-of-type), .approach ul .project-page .project-subsection-text li:not(:first-of-type), .project-page .project-subsection-text .approach ol li:not(:first-of-type), .approach ol .project-page .project-subsection-text li:not(:first-of-type), .project-page .project-subsection-text .project-role__description:not(:first-of-type) {
   margin-top: 37.5px;
 }
 
@@ -2021,6 +2082,99 @@ footer {
   cursor: pointer;
 }
 
+#cookie-banner-wizard-page .sketch-slider .medium-width-slider-image div {
+  height: 250px;
+}
+
+#marketing-landing-page .hero-background {
+  background: -moz-linear-gradient(-45deg, #F06543 0%, #F09947 100%);
+  background: -webkit-linear-gradient(-45deg, #F06543 0%, #F09947 100%);
+  background: linear-gradient(135deg, #F06543 0%, #F09947 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$start-color", endColorstr="$end-color",GradientType=1 );
+}
+
+#marketing-landing-page .project-role__label {
+  color: #F06543;
+}
+
+#marketing-landing-page blockquote span {
+  color: #F06543;
+}
+
+#marketing-landing-page #comment-one:before {
+  content: url("../img/projects/creation-flows/heuristic-evaluation/indices/1.svg");
+  float: left;
+  margin-right: 10px;
+}
+
+#marketing-landing-page #comment-two:before {
+  content: url("../img/projects/creation-flows/heuristic-evaluation/indices/2.svg");
+  float: left;
+  margin-right: 10px;
+}
+
+#marketing-landing-page #comment-three:before {
+  content: url("../img/projects/creation-flows/heuristic-evaluation/indices/3.svg");
+  float: left;
+  margin-right: 10px;
+}
+
+#marketing-landing-page #comment-four:before {
+  content: url("../img/projects/creation-flows/heuristic-evaluation/indices/4.svg");
+  float: left;
+  margin-right: 10px;
+}
+
+#marketing-landing-page #comment-five:before {
+  content: url("../img/projects/creation-flows/heuristic-evaluation/indices/5.svg");
+  float: left;
+  margin-right: 10px;
+}
+
+#marketing-landing-page .slick-prev:before {
+  content: url("../img/projects/creation-flows/carousel-arrows/previous-arrow.svg") !important;
+  cursor: pointer;
+}
+
+#marketing-landing-page .slick-next:before {
+  content: url("../img/projects/creation-flows/carousel-arrows/next-arrow.svg") !important;
+  cursor: pointer;
+}
+
+#marketing-landing-page .prototype-slider .slick-prev {
+  align-items: stretch;
+  background: none;
+  border: none;
+  height: 60px;
+  left: calc(50% - 260px);
+  outline-style: none;
+  padding: 0;
+  position: absolute;
+  top: 550px;
+  transform: scale(0.925);
+  width: 60px;
+  z-index: 500;
+}
+
+#marketing-landing-page .prototype-slider .slick-next {
+  align-items: stretch;
+  background: none;
+  border: none;
+  height: 60px;
+  outline-style: none;
+  padding: 0;
+  position: absolute;
+  right: calc(50% - 245px);
+  top: 550px;
+  transform: scale(0.925);
+  width: 60px;
+  z-index: 500;
+}
+
+#marketing-landing-page .project-slider--full-width-nav {
+  width: 300px;
+}
+
 #about-page .hero-section {
   align-items: center;
   display: flex;
@@ -2103,13 +2257,13 @@ footer {
   margin: 30px 0 50px 0;
 }
 
-#about-page .approach-section-text p, #about-page .approach-section-text #contact-page .contact-form div textarea, #contact-page .contact-form div #about-page .approach-section-text textarea, #about-page .approach-section-text #contact-page .contact-form div input, #contact-page .contact-form div #about-page .approach-section-text input, #about-page .approach-section-text #contact-page .contact-form div label, #contact-page .contact-form div #about-page .approach-section-text label, #about-page .approach-section-text .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width #about-page .approach-section-text figcaption, #about-page .approach-section-text .project-page .medium-width-slider-image figcaption, .project-page .medium-width-slider-image #about-page .approach-section-text figcaption, #about-page .approach-section-text .project-page .figure-description, .project-page #about-page .approach-section-text .figure-description, #about-page .approach-section-text .project-page .comment--description, .project-page #about-page .approach-section-text .comment--description, #about-page .approach-section-text .approach ul li, .approach ul #about-page .approach-section-text li, #about-page .approach-section-text .project-page .project-role__description, .project-page #about-page .approach-section-text .project-role__description, #about-page .approach-section-text .project-page .project-subsection-text ol, .project-page .project-subsection-text #about-page .approach-section-text ol {
+#about-page .approach-section-text p, #about-page .approach-section-text #contact-page .contact-form div textarea, #contact-page .contact-form div #about-page .approach-section-text textarea, #about-page .approach-section-text #contact-page .contact-form div input, #contact-page .contact-form div #about-page .approach-section-text input, #about-page .approach-section-text #contact-page .contact-form div label, #contact-page .contact-form div #about-page .approach-section-text label, #about-page .approach-section-text .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width #about-page .approach-section-text figcaption, #about-page .approach-section-text .project-page .medium-width-slider-image figcaption, .project-page .medium-width-slider-image #about-page .approach-section-text figcaption, #about-page .approach-section-text .project-page .mobile-mockup figcaption, .project-page .mobile-mockup #about-page .approach-section-text figcaption, #about-page .approach-section-text .project-page .figure-description, .project-page #about-page .approach-section-text .figure-description, #about-page .approach-section-text .project-page .comment--description, .project-page #about-page .approach-section-text .comment--description, #about-page .approach-section-text .approach ul li, .approach ul #about-page .approach-section-text li, #about-page .approach-section-text .approach ol li, .approach ol #about-page .approach-section-text li, #about-page .approach-section-text .project-page .project-role__description, .project-page #about-page .approach-section-text .project-role__description, #about-page .approach-section-text .project-page .project-subsection-text ol, .project-page .project-subsection-text #about-page .approach-section-text ol {
   -ms-grid-column: 3;
   -ms-grid-column-span: 4;
   grid-column: 3/7;
   line-height: 35px;
 }
-#about-page .approach-section-text p:not(:first-of-type), #about-page .approach-section-text #contact-page .contact-form div textarea:not(:first-of-type), #contact-page .contact-form div #about-page .approach-section-text textarea:not(:first-of-type), #about-page .approach-section-text #contact-page .contact-form div input:not(:first-of-type), #contact-page .contact-form div #about-page .approach-section-text input:not(:first-of-type), #about-page .approach-section-text #contact-page .contact-form div label:not(:first-of-type), #contact-page .contact-form div #about-page .approach-section-text label:not(:first-of-type), #about-page .approach-section-text .project-page .project-image--medium-width figcaption:not(:first-of-type), .project-page .project-image--medium-width #about-page .approach-section-text figcaption:not(:first-of-type), #about-page .approach-section-text .project-page .medium-width-slider-image figcaption:not(:first-of-type), .project-page .medium-width-slider-image #about-page .approach-section-text figcaption:not(:first-of-type), #about-page .approach-section-text .project-page .figure-description:not(:first-of-type), .project-page #about-page .approach-section-text .figure-description:not(:first-of-type), #about-page .approach-section-text .project-page .comment--description:not(:first-of-type), .project-page #about-page .approach-section-text .comment--description:not(:first-of-type), #about-page .approach-section-text .approach ul li:not(:first-of-type), .approach ul #about-page .approach-section-text li:not(:first-of-type), #about-page .approach-section-text .project-page .project-role__description:not(:first-of-type), .project-page #about-page .approach-section-text .project-role__description:not(:first-of-type), #about-page .approach-section-text .project-page .project-subsection-text ol:not(:first-of-type), .project-page .project-subsection-text #about-page .approach-section-text ol:not(:first-of-type) {
+#about-page .approach-section-text p:not(:first-of-type), #about-page .approach-section-text #contact-page .contact-form div textarea:not(:first-of-type), #contact-page .contact-form div #about-page .approach-section-text textarea:not(:first-of-type), #about-page .approach-section-text #contact-page .contact-form div input:not(:first-of-type), #contact-page .contact-form div #about-page .approach-section-text input:not(:first-of-type), #about-page .approach-section-text #contact-page .contact-form div label:not(:first-of-type), #contact-page .contact-form div #about-page .approach-section-text label:not(:first-of-type), #about-page .approach-section-text .project-page .project-image--medium-width figcaption:not(:first-of-type), .project-page .project-image--medium-width #about-page .approach-section-text figcaption:not(:first-of-type), #about-page .approach-section-text .project-page .medium-width-slider-image figcaption:not(:first-of-type), .project-page .medium-width-slider-image #about-page .approach-section-text figcaption:not(:first-of-type), #about-page .approach-section-text .project-page .mobile-mockup figcaption:not(:first-of-type), .project-page .mobile-mockup #about-page .approach-section-text figcaption:not(:first-of-type), #about-page .approach-section-text .project-page .figure-description:not(:first-of-type), .project-page #about-page .approach-section-text .figure-description:not(:first-of-type), #about-page .approach-section-text .project-page .comment--description:not(:first-of-type), .project-page #about-page .approach-section-text .comment--description:not(:first-of-type), #about-page .approach-section-text .approach ul li:not(:first-of-type), .approach ul #about-page .approach-section-text li:not(:first-of-type), #about-page .approach-section-text .approach ol li:not(:first-of-type), .approach ol #about-page .approach-section-text li:not(:first-of-type), #about-page .approach-section-text .project-page .project-role__description:not(:first-of-type), .project-page #about-page .approach-section-text .project-role__description:not(:first-of-type), #about-page .approach-section-text .project-page .project-subsection-text ol:not(:first-of-type), .project-page .project-subsection-text #about-page .approach-section-text ol:not(:first-of-type) {
   margin-top: 30px;
 }
 
@@ -2181,7 +2335,7 @@ footer {
   -ms-grid-column-span: 4;
   grid-column: 2/6;
 }
-#contact-page .contact-form-section p, #contact-page .contact-form-section .contact-form div textarea, #contact-page .contact-form div .contact-form-section textarea, #contact-page .contact-form-section .contact-form div input, #contact-page .contact-form div .contact-form-section input, #contact-page .contact-form-section .contact-form div label, #contact-page .contact-form div .contact-form-section label, #contact-page .contact-form-section .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width #contact-page .contact-form-section figcaption, #contact-page .contact-form-section .project-page .medium-width-slider-image figcaption, .project-page .medium-width-slider-image #contact-page .contact-form-section figcaption, #contact-page .contact-form-section .project-page .figure-description, .project-page #contact-page .contact-form-section .figure-description, #contact-page .contact-form-section .project-page .comment--description, .project-page #contact-page .contact-form-section .comment--description, #contact-page .contact-form-section .approach ul li, .approach ul #contact-page .contact-form-section li, #contact-page .contact-form-section .project-page .project-role__description, .project-page #contact-page .contact-form-section .project-role__description, #contact-page .contact-form-section .project-page .project-subsection-text ol, .project-page .project-subsection-text #contact-page .contact-form-section ol {
+#contact-page .contact-form-section p, #contact-page .contact-form-section .contact-form div textarea, #contact-page .contact-form div .contact-form-section textarea, #contact-page .contact-form-section .contact-form div input, #contact-page .contact-form div .contact-form-section input, #contact-page .contact-form-section .contact-form div label, #contact-page .contact-form div .contact-form-section label, #contact-page .contact-form-section .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width #contact-page .contact-form-section figcaption, #contact-page .contact-form-section .project-page .medium-width-slider-image figcaption, .project-page .medium-width-slider-image #contact-page .contact-form-section figcaption, #contact-page .contact-form-section .project-page .mobile-mockup figcaption, .project-page .mobile-mockup #contact-page .contact-form-section figcaption, #contact-page .contact-form-section .project-page .figure-description, .project-page #contact-page .contact-form-section .figure-description, #contact-page .contact-form-section .project-page .comment--description, .project-page #contact-page .contact-form-section .comment--description, #contact-page .contact-form-section .approach ul li, .approach ul #contact-page .contact-form-section li, #contact-page .contact-form-section .approach ol li, .approach ol #contact-page .contact-form-section li, #contact-page .contact-form-section .project-page .project-role__description, .project-page #contact-page .contact-form-section .project-role__description, #contact-page .contact-form-section .project-page .project-subsection-text ol, .project-page .project-subsection-text #contact-page .contact-form-section ol {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-column: 2/6;

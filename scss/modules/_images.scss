@@ -129,6 +129,56 @@
   z-index: 100;
 }
 
+.project-page .mobile-mockup {
+  @include flexbox($align: center, $direction: column, $justify: center);
+  height: auto;
+  margin: 75px auto;
+  width: 100%;
+
+  figcaption {
+    @include grid-child(3,7);
+    @extend p;
+    color: $black;
+    display: block;
+    font-family: $font-bold;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 45px;
+    text-align: center;
+
+    span {
+      color: $medium-gray;
+      font-family: $font-medium;
+      letter-spacing: 1.225px;
+      margin-right: 5px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.project-page .mobile-device-frame {
+  @include flexbox($align: start, $justify: center);
+  background: url(../img/projects/mobile-device.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 555px;
+  width: 270px;
+
+  div {
+    @include box-shadow();
+    border-radius: 15px;
+    height: 94%;
+    margin-top: 15px;
+    overflow: auto;
+    width: 90%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+
 .project-page .full-width-image-background {
   background: $color-full-width-image-background;
   box-sizing: border-box;
@@ -306,7 +356,7 @@
     text-transform: uppercase;
   }
 
-  ul li {
+  ul li, ol li {
     @extend p;
     font-size: 14px;
     list-style: none;
@@ -332,7 +382,7 @@
       width: 2em;
     }
 
-    ul li {
+    ul li, ol li {
       &:first-of-type {
         padding-top: 4.85px;
       }

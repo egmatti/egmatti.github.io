@@ -1,5 +1,5 @@
 // ==========================================
-// CREATION FLOWS PROJECT PAGE
+// COOKIE BANNER WIZARD PROJECT PAGE
 // ==========================================
 
 #cookie-banner-wizard-page .hero-background {
@@ -28,4 +28,8 @@
     content: url('../img/projects/cookie-banner-wizard/carousel-arrows/next-arrow.svg') !important;
     cursor: pointer;
   }
+}
+
+#cookie-banner-wizard-page .sketch-slider .medium-width-slider-image div {
+  height: 250px;
 }
