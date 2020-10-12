@@ -3,15 +3,15 @@
 // ==========================================
 
 #marketing-landing-page .hero-background {
-  @include gradient($burnt-orange, $tangerine);
+  @include gradient($kelly-green, $lime-green);
 }
 
 #marketing-landing-page .project-role__label {
-   color: $burnt-orange;
+   color: $kelly-green;
 }
 
 #marketing-landing-page blockquote span {
-  color: $burnt-orange;
+  color: $kelly-green;
 }
 
 #marketing-landing-page #comment-one:before {

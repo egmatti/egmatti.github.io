@@ -2,7 +2,7 @@
 <g filter="url(#filter0_d)">
 <rect width="60" height="60" rx="30" transform="matrix(-1 0 0 1 68 5)" fill="white"/>
 </g>
-<path d="M43 47L32 35.5L43 24" stroke="#60D394" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M43 47L32 35.5L43 24" stroke="#F09947" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round"/>
 <defs>
 <filter id="filter0_d" x="0" y="0" width="76" height="76" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>

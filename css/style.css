@@ -2058,18 +2058,18 @@ footer {
 }
 
 #cookie-banner-wizard-page .hero-background {
-  background: -moz-linear-gradient(-45deg, #60D394 0%, #60FF98 100%);
-  background: -webkit-linear-gradient(-45deg, #60D394 0%, #60FF98 100%);
-  background: linear-gradient(135deg, #60D394 0%, #60FF98 100%);
+  background: -moz-linear-gradient(-45deg, #F06543 0%, #F09947 100%);
+  background: -webkit-linear-gradient(-45deg, #F06543 0%, #F09947 100%);
+  background: linear-gradient(135deg, #F06543 0%, #F09947 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$start-color", endColorstr="$end-color",GradientType=1 );
 }
 
 #cookie-banner-wizard-page .project-role__label {
-  color: #60D394;
+  color: #F06543;
 }
 
 #cookie-banner-wizard-page blockquote span {
-  color: #60D394;
+  color: #F06543;
 }
 
 #cookie-banner-wizard-page .slick-prev:before {
@@ -2087,18 +2087,18 @@ footer {
 }
 
 #marketing-landing-page .hero-background {
-  background: -moz-linear-gradient(-45deg, #F06543 0%, #F09947 100%);
-  background: -webkit-linear-gradient(-45deg, #F06543 0%, #F09947 100%);
-  background: linear-gradient(135deg, #F06543 0%, #F09947 100%);
+  background: -moz-linear-gradient(-45deg, #60D394 0%, #60FF98 100%);
+  background: -webkit-linear-gradient(-45deg, #60D394 0%, #60FF98 100%);
+  background: linear-gradient(135deg, #60D394 0%, #60FF98 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$start-color", endColorstr="$end-color",GradientType=1 );
 }
 
 #marketing-landing-page .project-role__label {
-  color: #F06543;
+  color: #60D394;
 }
 
 #marketing-landing-page blockquote span {
-  color: #F06543;
+  color: #60D394;
 }
 
 #marketing-landing-page #comment-one:before {
