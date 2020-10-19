@@ -1,0 +1,35 @@
+// ==========================================
+// COOKIE BANNER GALLERY PROJECT PAGE
+// ==========================================
+
+#cookie-banner-gallery-page .hero-background {
+  @include gradient($sky-blue, $aqua);
+}
+
+#cookie-banner-gallery-page .project-role__label {
+   color: $sky-blue;
+}
+
+#cookie-banner-gallery-page blockquote span {
+  color: $sky-blue;
+}
+
+#cookie-banner-gallery-page .slick-prev {
+
+  &:before {
+    content: url('../img/projects/cookie-banner-gallery/carousel-arrows/previous-arrow.svg') !important;
+    cursor: pointer;
+  }
+}
+
+#cookie-banner-gallery-page .slick-next {
+
+  &:before {
+    content: url('../img/projects/cookie-banner-gallery/carousel-arrows/next-arrow.svg') !important;
+    cursor: pointer;
+  }
+}
+
+#cookie-banner-gallery-page .sketch-slider .medium-width-slider-image div {
+  height: 250px;
+}

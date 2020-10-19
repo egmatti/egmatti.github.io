@@ -2057,35 +2057,6 @@ footer {
   width: 465px;
 }
 
-#cookie-banner-wizard-page .hero-background {
-  background: -moz-linear-gradient(-45deg, #F06543 0%, #F09947 100%);
-  background: -webkit-linear-gradient(-45deg, #F06543 0%, #F09947 100%);
-  background: linear-gradient(135deg, #F06543 0%, #F09947 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$start-color", endColorstr="$end-color",GradientType=1 );
-}
-
-#cookie-banner-wizard-page .project-role__label {
-  color: #F06543;
-}
-
-#cookie-banner-wizard-page blockquote span {
-  color: #F06543;
-}
-
-#cookie-banner-wizard-page .slick-prev:before {
-  content: url("../img/projects/cookie-banner-wizard/carousel-arrows/previous-arrow.svg") !important;
-  cursor: pointer;
-}
-
-#cookie-banner-wizard-page .slick-next:before {
-  content: url("../img/projects/cookie-banner-wizard/carousel-arrows/next-arrow.svg") !important;
-  cursor: pointer;
-}
-
-#cookie-banner-wizard-page .sketch-slider .medium-width-slider-image div {
-  height: 250px;
-}
-
 #marketing-landing-page .hero-background {
   background: -moz-linear-gradient(-45deg, #60D394 0%, #60FF98 100%);
   background: -webkit-linear-gradient(-45deg, #60D394 0%, #60FF98 100%);
@@ -2173,6 +2144,64 @@ footer {
 
 #marketing-landing-page .project-slider--full-width-nav {
   width: 300px;
+}
+
+#cookie-banner-wizard-page .hero-background {
+  background: -moz-linear-gradient(-45deg, #F06543 0%, #F09947 100%);
+  background: -webkit-linear-gradient(-45deg, #F06543 0%, #F09947 100%);
+  background: linear-gradient(135deg, #F06543 0%, #F09947 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$start-color", endColorstr="$end-color",GradientType=1 );
+}
+
+#cookie-banner-wizard-page .project-role__label {
+  color: #F06543;
+}
+
+#cookie-banner-wizard-page blockquote span {
+  color: #F06543;
+}
+
+#cookie-banner-wizard-page .slick-prev:before {
+  content: url("../img/projects/cookie-banner-wizard/carousel-arrows/previous-arrow.svg") !important;
+  cursor: pointer;
+}
+
+#cookie-banner-wizard-page .slick-next:before {
+  content: url("../img/projects/cookie-banner-wizard/carousel-arrows/next-arrow.svg") !important;
+  cursor: pointer;
+}
+
+#cookie-banner-wizard-page .sketch-slider .medium-width-slider-image div {
+  height: 250px;
+}
+
+#cookie-banner-gallery-page .hero-background {
+  background: -moz-linear-gradient(-45deg, #009ACD 0%, #00CED1 100%);
+  background: -webkit-linear-gradient(-45deg, #009ACD 0%, #00CED1 100%);
+  background: linear-gradient(135deg, #009ACD 0%, #00CED1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$start-color", endColorstr="$end-color",GradientType=1 );
+}
+
+#cookie-banner-gallery-page .project-role__label {
+  color: #009ACD;
+}
+
+#cookie-banner-gallery-page blockquote span {
+  color: #009ACD;
+}
+
+#cookie-banner-gallery-page .slick-prev:before {
+  content: url("../img/projects/cookie-banner-gallery/carousel-arrows/previous-arrow.svg") !important;
+  cursor: pointer;
+}
+
+#cookie-banner-gallery-page .slick-next:before {
+  content: url("../img/projects/cookie-banner-gallery/carousel-arrows/next-arrow.svg") !important;
+  cursor: pointer;
+}
+
+#cookie-banner-gallery-page .sketch-slider .medium-width-slider-image div {
+  height: 250px;
 }
 
 #about-page .hero-section {

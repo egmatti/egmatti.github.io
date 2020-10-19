@@ -1,0 +1,402 @@
+<!-- ==========================================
+COOKIE BANNER GALLERY PROJECT PAGE
+========================================== -->
+
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149525081-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-149525081-1');
+  </script>
+  <meta charset="utf-8">
+  <title>Cookie Banner Gallery Project | Emily Mattison Design</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="project-page" id="cookie-banner-gallery-page">
+
+  <div class="hero-background">
+  </div>
+
+  <header>
+    <a href="/"><img class="header-logo" src="img/logos/logo-full-white--sky-blue-border.png" alt="Emily Mattison Design"></img></a>
+    <ul class="main-nav">
+      <a id="main-nav__work" href="/work"><li>Work</li></a>
+      <a id="main-nav__about" href="/about"><li>About</li></a>
+      <a id="main-nav__contact" href="/contact"><li>Contact</li></a>
+    </ul>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-text">
+      <span class="project-name">OneTrust</span>
+      <h2 class="project-title">Offering potential customers the chance to see their full suite of cookie banner options</h2>
+      <img class="project-hero-image" src="img/projects/cookie-banner-gallery/hero-image.png" alt="Screenshot of the Cookie Banner Gallery on the CookiePro website.">
+    </div>
+  </section>
+
+  <section class="project-section background-section">
+    <div class="project-role">
+      <span class="project-role__label">Role</span>
+      <span class="project-role__description">UX Designer</span>
+    </div>
+    <div class="project-section-text">
+      <span class="project-section-name">Background</span>
+      <h3 class="project-section-title">A gallery of cookie banners that wasn’t<br/>reflective of users’ options</h3>
+      <p>When OneTrust began to restructure their privacy management software business into subsidiary brands that served different markets, they needed to create different marketing sites for those brands with content that appealed to each brand’s target audience. The CookiePro brand and team, which were formed to serve the needs of small businesses, focused on helping customers create cookie banners and privacy preference centers for their websites. As a way to showcase the different cookie banner and preference center options that the OneTrust application offered, the CookiePro team asked the web development team at OneTrust to build a gallery feature for their marketing site that their potential customers could use to get an idea of how a OneTrust cookie banner might look on their own websites.</p>
+      <p>When the Cookie Banner Gallery initially launched on the CookiePro site, it was a simple feature allowing visitors to see thumbnails of the available cookie banner and preference center layouts in the OneTrust application. If a visitor clicked on a thumbnail, they could see a larger version of that layout with a description of the layout in a modal. The only filters in this initial version of the Cookie Banner Gallery were two links to the side of the layout thumbnails that allowed visitors to switch from viewing the available cookie banner layouts to the available preference center layouts.</p>
+      <p>When the CookiePro team asked me to revamp the Cookie Banner Gallery a few months after its initial release, I, at first, thought they just wanted me to update the gallery’s styles since the colors in the layout thumbnails looked a bit dull and the thumbnails weren’t necessarily conveying the user’s ability to change their cookie banner or preference center’s styles to match their own brand in the OneTrust application. As I got further into the project and further into exploring the OneTrust application, however, I discovered that there were a lot more cookie banner options in the app than just that and that the CookiePro team wanted to showcase nearly all of them.</p>
+    </div>
+  </section>
+
+  <section class="project-section process-section">
+    <div class="project-section-text">
+      <span class="project-section-name">Process</span>
+      <h3 class="project-section-title">A complex feature set that needed a simple preview</h3>
+    </div>
+
+    <div class="project-subsection-text">
+      <img class="project-subsection-number" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart" src="img/projects/subsection-numbers/subsection-one.svg">
+      <h5 class="project-subsection-name">Gathering Requirements</h5>
+      <p>It’s possible that the CookiePro team’s ideas for what they wanted for the gallery updates were evolving at the the same time that the gallery was since the acceptance criteria that were provided in the gallery’s JIRA ticket seemed to indicate that the team was just looking for an update to the gallery’s styles as I had originally thought. I came to my first meeting on the gallery updates prepared to show the CookiePro team what the gallery might look like with a hero image and some layout thumbnail styles that were pulled from the work I had recently done on the CookiePro Knowledgebase and the <a href="/cookie-banner-wizard">Cookie Banner Builder</a> tool. I also came prepared to show them what a dedicated page for the cookie banner or preference center previews might look like compared to the modals that contained the previews in the existing gallery. The acceptance criteria on the JIRA ticket had included a line item for being able to preview the cookie banners and preference centers on different devices. Moving the previews to a page that was separate from the gallery view seemed like it would make toggling back and forth between the different device previews much easier.</p>
+    </div>
+    <figure class="project-slider--medium-width mockup-slider">
+      <div class="medium-width-slider-image" data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v1/gallery-view.png" alt="The Gallery page in my rough initial mockups for the Cookie Banner Gallery updates.">
+        </div>
+        <figcaption><span>Mockup #1:</span>The Gallery page in my rough initial mockups for the Cookie Banner Gallery updates.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v1/detail-view.png" alt="The Preview page in my rough initial mockups for the Cookie Banner Gallery updates.">
+        </div>
+        <figcaption><span>Mockup #2:</span>The Preview page in my rough initial mockups for the Cookie Banner Gallery updates.</figcaption>
+      </div>
+    </figure>
+    <div class="project-subsection-text">
+      <p>The team seemed to love the look and feel of the new mockups even though they were still at an early stage. They also approved of the idea of moving the cookie banner and preference center previews to a separate page from the gallery view. As they began to show me examples of other sites’ gallery features and also explain to me how they wanted to incorporate features from a few demo sites that a OneTrust developer had created for them in the past, it became clear to me that they wanted much more than the simple display of cookie banners and preference center layouts that the existing Cookie Banner Gallery provided though. For one thing, they wanted each preview to be displayed on top of a different website background.</p>
+      <p>They thought potential CookiePro customers might find the cookie banner and preference center options more appealing if they saw cookie banners and preference centers on websites that reflected the potential customers’ industries. They wanted to add another filter to the gallery sidebar that would allow site visitors to filter for cookie banner and preference center previews that looked like they were on e-commerce, government, financial, or food and beverage sites to name a few examples. This was an idea that they had gotten from looking at the gallery of templates on Leadpages’ site, which offers landing page templates with layouts and styles that are meant to be a good fit for specific industries.</p>
+    </div>
+    <figure class="project-slider--medium-width">
+      <div class="medium-width-slider-image" data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/inspiration/leadpages-screenshot.png" alt="A screenshot of Leadpages' template gallery.">
+        </div>
+        <figcaption><span>Screenshot:</span>A screenshot of Leadpages' template gallery.</figcaption>
+      </div>
+    </figure>
+    <div class="project-subsection-text">
+      <p>The CookiePro team didn’t want the cookie banner and preference center previews to sit on top of static website backgrounds that just looked like e-commerce, government, financial, or food and beverage websites, however; they wanted our web development team to design and develop actual web pages that the cookie banner and preference centers would sit on top of and that would change depending on the visitor’s selection of privacy preferences in the preference center previews. It was a complicated ask that was going to make the gallery less of a gallery and more of a mini web app similar to the CookiePro Website Scanner, CCPA Opt-Out Builder, and Cookie Banner Builder tools the team had already built.</p>
+    </div>
+    <figure class="project-image--medium-width">
+      <img data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart" src="img/projects/cookie-banner-wizard/preference-center-example.png" alt="A picture of my sketches and notes from the first Cookie Banner Gallery meeting.">
+      <figcaption><span>Sketch:</span>A picture of my sketches and notes from the first Cookie Banner Gallery meeting.</figcaption>
+    </figure>
+    <div class="project-subsection-text">
+      <p>I thought the CookiePro team’s ideas were interesting, but I wasn’t sure if they would be feasible from a development perspective and, in retrospect, I should have spent time conducting research to determine whether they would be valuable from a visitor’s perspective. The culture at OneTrust was one of getting things done as fast as possible and without questions, however, so I pressed on to figuring out whether their ideas were technically feasible versus personally valuable as I should have done.</p>
+      <p>When I met with our team’s Lead Web Developer to discuss the CookiePro team’s requests with her, she told me some of the requests were possible, some weren’t, and some were possible but were going to take a long time. I began to make a list of all the features that the CookiePro team wanted and sorted the features that were possible sooner from the ones that were possible later. I proposed that we take a phased approach to updating the Cookie Banner Gallery by separating the team’s requested features into two releases, which our Lead Web Developer thought was a good idea.</p>
+    </div>
+    <figure class="project-image--medium-width">
+      <img data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart" src="img/projects/cookie-banner-wizard/preference-center-example.png" alt="A picture of my notes about the phased approach for updating the Cookie Banner Gallery.">
+      <figcaption><span>Notes:</span>My notes about the phased approach for updating the Cookie Banner Gallery.</figcaption>
+    </figure>
+    <div class="project-subsection-text last-project-subsection-paragraph">
+      <p>She helped me create a formalized document laying out the features that we thought could and/or should go in each release, which I then presented to the CookiePro team. The CookiePro team was happy that we were going to try to update the Cookie Banner Gallery to fit their vision and didn’t mind having to wait longer for some of the features as long as we eventually planned on adding them. With their approval secured, I started working on the mockups for the Phase I release.</p>
+    </div>
+
+    <div class="project-subsection-text">
+      <img class="project-subsection-number" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart" src="img/projects/subsection-numbers/subsection-two.svg">
+      <h5 class="project-subsection-name">Phase I Mockups</h5>
+      <p>One of the requests that the CookiePro team had made was that the previews on the Cookie Banner Gallery’s preview pages mimic the functionality of the demo sites that another developer at OneTrust had built for them in the past. Each demo site was essentially a fake landing page displaying a OneTrust cookie banner. If the user clicked on a button in the cookie banner indicating that they would like to change their privacy preferences, the cookie banner would disappear and a preference center modal would appear. The preference center would contain toggles for certain privacy preferences. If the user toggled on or off certain preferences, they would see green checkmarks next to descriptions of particular privacy settings turn to red X’s in a separate banner at the top of the page.</p>
+      <p>The CookiePro team wanted me to display a similar list of privacy settings on the Cookie Banner Gallery’s preview pages. They wanted the gallery’s visitors to be able to click on the toggles in the preview’s preference center and see green checkmarks for the privacy settings turn to red X’s or vice versa in a list somewhere on the page. Determining where that “somewhere” was became a challenge for me because our Lead Web Developer had told me that the only way to display an interactive web page within a preview window on another page as the CookiePro team wanted us to do would be to create an iframe for the preview window that the web page would sit within. Our Lead Web Developer said that whatever activity occurred within that iframe—which would technically be a separate web page—would not be able to be reflected on the overall preview page. Basically, what happened in the iframe had to stay in the iframe. This meant that the privacy settings list with its checkmarks and X’s next to particular privacy settings would need to appear within the preview’s iframe as well.</p>
+      <p>I struggled to determine how a gallery visitor would be able to view the changing privacy settings within the preview window in addition to viewing the cookie banner or preference center, which were supposed to sit above the rest of the content on the fake landing page and would change positions depending on which layout the visitor was previewing.</p>
+      <p>After talking through possible solutions to this problem with our Lead Web Developer and Lead UI/UX Designer, I decided that the best way to display the privacy settings list might be in a drawer at the bottom of the preview window. The visitor could view the privacy settings by clicking on a floating action button that said “Cookie Settings” in the bottom center of the preview window. Opening the privacy settings drawer would cause the cookie banner or preference center to disappear and closing the drawer would cause them to reappear. It wasn’t an ideal solution, but the limitations around the privacy settings’ location weren’t ideal either. Given the circumstances, our Lead Web Developer, Lead UI/UX Designer, and I thought it worked. I continued working on the Phase I mockups and sent them to our Director of UX & Design for review a few days later.</p>
+    </div>
+    <figure class="project-slider--medium-width mockup-slider">
+      <div class="medium-width-slider-image" data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v2/gallery-view.png" alt="The Gallery page in my Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #1:</span>The Gallery page in my Phase I mockups.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v2/detail-view-1.png" alt="The Preview page for a cookie banner layout in my Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #2:</span>The Preview page for a cookie banner layout in my Phase I mockups.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v2/detail-view-2.png" alt="The Preview page for a cookie banner layout in my Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #3:</span>The Preview page for a cookie banner layout in my Phase I mockups.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v2/detail-view-3.png" alt="The Preview page for a preference center layout in my Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #4:</span>The Preview page for a preference center layout in my Phase I mockups.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v2/detail-view-4.png" alt="The Preview page with the privacy settings drawer open in my Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #5:</span>The Preview page with the privacy settings drawer open in my Phase I mockups.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v2/detail-view-5.png" alt="The Preview page for a preference center layout in my Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #6:</span>The Preview page for a preference center layout in my Phase I mockups.</figcaption>
+      </div>
+    </figure>
+    <div class="project-subsection-text">
+      <p>Our Director of UX & Design had a lot of feedback and it was through that feedback process that I began to learn a lot more about the cookie banner and preference center functionality in the OneTrust application. His main pieces of feedback concerned the way that the cookie banner layouts and preference center layouts were displayed in the gallery page and the filter for viewing layouts by regulation or framework in the gallery page’s sidebar. With the former, he said that it didn't make sense to show cookie banners and preference centers alongside each other since the two are paired. (He likened the process to selecting departure and return dates for a roundtrip flight.) With the latter, he said that it didn't make sense to show "Regulation or Framework" as a filter since the OneTrust application dynamically updates a user's cookie banner and preference center based on the regulations and frameworks in place in the site visitor’s region.</p>
+      <p>I was able to address his concern about the cookie banner layouts and preference center layouts appearing alongside each other by separating the two types of layouts into tabs, which the gallery visitor could toggle between at the top of the gallery page. His other concern about the regulation and framework filter required more thought though. The CookiePro team had been adamant about wanting to give the gallery visitors a way to view the same cookie banner or preference center layout for different regulations or frameworks. Based on the information that our Director of UX & Design gave me and my own experience trying things out in the OneTrust application, I wondered if we should move the regulation or framework filter to the preview page for each layout. This would align with the way that users select a cookie banner in the OneTrust app and the way that the app then dynamically adjusts the content within the cookie banner to fit the regulations in each of the user’s site visitors’ locations.</p>
+      <p>Adding another control to the detail page was trickier than I had hoped it would be though since the layout I had been using didn’t have room for an additional dropdown. I explored adding a sidebar to the detail page that would contain not just the dropdown for regulations and frameworks, but also the device preview selector and a link prompting the gallery visitor to view the next layout in the gallery, which had previously just been a carousel arrow. I completed another version of the Phase I mockups based on these ideas and shared them with our Director of UX & Design who approved them. When I presented them to the CookiePro Offering Manager, however, the design and development process stalled. She withheld feedback for a few weeks while I worked on other projects, but eventually came back with some new requests.</p>
+    </div>
+    <figure class="project-slider--medium-width mockup-slider">
+      <div class="medium-width-slider-image" data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v3/gallery-view-1.png" alt="The Cookie Banner tab of the Gallery page in my revised Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #1:</span>The Cookie Banner tab of the Gallery page in my revised Phase I mockups.</figcaption>
+      </div>
+      <div class="medium-width-slider-image" data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v3/gallery-view-2.png" alt="The Preference Center tab of the Gallery page in my revised Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #1:</span>The Preference Center tab of the Gallery page in my revised Phase I mockups.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v3/detail-view-1.png" alt="The Preview page for a cookie banner layout in my revised Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #2:</span>The Preview page for a cookie banner layout in my revised Phase I mockups.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v3/detail-view-2.png" alt="The Preview page for a cookie banner layout in my revised Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #3:</span>The Preview page for a cookie banner layout in my revised Phase I mockups.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v3/detail-view-3.png" alt="The Preview page for a preference center layout in my revised Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #4:</span>The Preview page for a preference center layout in my revised Phase I mockups.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v3/detail-view-4.png" alt="The Preview page with the privacy settings drawer open in my revised Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #5:</span>The Preview page with the privacy settings drawer open in my revised Phase I mockups.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v3/detail-view-5.png" alt="The Preview page for a preference center layout in my revised Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #6:</span>The Preview page for a preference center layout in my revised Phase I mockups.</figcaption>
+      </div>
+    </figure>
+    <div class="project-subsection-text">
+      <p>The CookiePro Offering Manager thought it might be best to remove the preference center layouts from the gallery page, which would mean removing the tabs I had added to the top of the page. When a visitor clicked on the “Manage Preferences” link in the cookie banner on the preview page, the CookiePro team’s recommended preference center layout would appear, replacing the cookie banner. I didn’t have an issue with this request. One of my lingering questions had been around the interaction between the cookie banner previews and the preference center previews since we wanted visitors to be able to view the different layout options for both, but the two also had to connect in order for the preview page’s interactive features to work. Removing the preference center layouts from the gallery page simplified that interaction, but it meant that the gallery was more firmly the “Cookie Banner Gallery” versus the “Cookie Banner & Preference Center Gallery,” which we had thought it might become.</p>
+      <p>In addition to her request about the preference center layouts, the CookiePro Offering Manager also asked if we could move the privacy settings (or “cookie settings” as they were labeled in the mockups) out of the preview window. Our Lead Web Developer and I had already talked about this at length with the conclusion being that it wasn’t possible. After I told the CookiePro Offering Manager this, she consulted with another developer on the CookiePro product team who said that he thought it actually would be possible. We met as a group later that week and the other developer explained to our team’s Lead Web Developer what she would need to do in order to allow the things that happened within the preview window’s iframe to be reflected on another part of the preview page.</p>
+      <p>I set about making the next set of mockups based on these conversations and then tested a few ideas for the preview page among our larger UX team using UsabilityHub. The results of those tests indicated that one configuration of the privacy settings on the preview page was better than another and that adding a “Manage Preferences” floating action button to the preview window might make it easier for the gallery visitors to realize that the preview was interactive and be able to access the preview’s preference center.</p>
+    </div>
+    <figure class="project-slider--medium-width mockup-slider">
+      <div class="medium-width-slider-image" data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v4/gallery-view.png" alt="The Gallery page in my final Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #1:</span>The Gallery page in my final Phase I mockups.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v4/detail-view-1.png" alt="The Preview page showing a cookie banner in my final Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #2:</span>The Preview page showing a cookie banner in my final Phase I mockups.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v4/detail-view-2.png" alt="The Preview page showing a preference center in my final Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #3:</span>The Preview page showing a preference center in my final Phase I mockups.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v4/detail-view-3.png" alt="The Preview page showing a Cookie Settings tooltip in my final Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #4:</span>The Preview page showing a Cookie Settings tooltip in my final Phase I mockups.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v4/detail-view-4.png" alt="The Preview page showing a cookie banner in my final Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #5:</span>The Preview page showing a cookie banner in my final Phase I mockups.</figcaption>
+      </div>
+      <div class="medium-width-slider-image">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-i/v4/detail-view-5.png" alt="The Preview page showing a preference center in my final Phase I mockups.">
+        </div>
+        <figcaption><span>Mockup #6:</span>The Preview page showing a preference center in my final Phase I mockups.</figcaption>
+      </div>
+    </figure>
+  </section>
+
+  <section class="project-section solution-section">
+    <div class="project-section-text">
+      <span class="project-section-name">Next Steps</span>
+      <h3 class="project-section-title">Pushing onward to the next phase of the project</h3>
+      <p>Our Lead Web Developer worked on making the changes to the Cookie Banner Gallery as outlined in the Phase I mockups a few weeks later. Unfortunately, I left OneTrust before the updates were released and therefore wasn’t able to look at usage metrics among actual CookiePro site visitors. Although I was confident that the new version of the gallery would be helpful for visitors who had detailed questions about how OneTrust cookie banners and preference centers worked, I wasn’t sure how the gallery would perform among visitors with fewer questions or a less technical understanding of what cookie banners and preference centers do. I was nevertheless proud of the work we had done and eager to see the second phase of the project implemented.</p>
+      <p>Although I hadn’t completed the Phase II mockups by the time I left, I had at least created a rough version of the Phase II gallery page, which used placeholder images taken from Leadpages as the industry-specific backgrounds for each of the layout thumbnails. I had removed the sidebar from the gallery page in the final Phase I mockups because we had slowly eliminated almost all the filters in the sidebar, but I brought it back in the rough mockup for the Phase II gallery page since the introduction of industry-specific cookie banners necessitated it.</p>
+    </div>
+    <figure class="project-slider--medium-width mockup-slider">
+      <div class="medium-width-slider-image" data-aos="slide-up" data-aos-duration="750" data-aos-easing="ease-out-quart">
+        <div>
+          <img src="img/projects/cookie-banner-gallery/mockups/phase-ii/gallery-view.png" alt="The rough mockup of the Phase II Gallery page.">
+        </div>
+        <figcaption><span>Mockup:</span>The rough mockup of the Phase II Gallery page.</figcaption>
+      </div>
+    </figure>
+    <div class="project-subsection-text">
+      <p>Before I left, we had talked about including additional updates in the Phase II release that weren’t part of the original plan, but that I think could have helped tailor the CookiePro site visitors’ experience to their specific needs and questions. One of these ideas involved providing the visitors with a quiz that would filter the cookie banner layouts on the gallery page down to the options that seemed the most beneficial for their company and use case. Although I wasn’t able to help with these ideas more before I left, I’m excited to see whether or not the team chooses to implement them and how the Cookie Banner Gallery will continue to evolve to show potential customers all the cookie banner and preference center functionality that OneTrust has to offer.</p>
+    </div>
+  </section>
+
+  <section class="work-section">
+    <h2 class="section-title">Work</h2>
+    <div class="projects-grid">
+      <div class="project" id="project-one" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart">
+        <a href="/creation-flows" class="project-link"><span></span></a>
+        <div class="project-text">
+          <span class="project-name">UserIQ</span>
+          <h3 class="project-title">Creation<br/>Flows</h3>
+          <span class="text-link project-text-link">View project</span>
+        </div>
+      </div>
+      <div class="project" id="project-two" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
+        <a href="/campaign-results" class="project-link"><span></span></a>
+        <div class="project-text">
+          <span class="project-name">UserIQ</span>
+          <h3 class="project-title">Campaign<br/>Results</h3>
+          <span class="text-link project-text-link">View project</span>
+        </div>
+      </div>
+      <div class="project" id="project-three" data-aos="slide-up" data-aos-duration="1500" data-aos-easing="ease-out-quart">
+        <a href="/tasks-and-playbooks" class="project-link"><span></span></a>
+        <div class="project-text">
+          <span class="project-name">UserIQ</span>
+          <h3 class="project-title">Tasks & Playbooks</h3>
+          <span class="text-link project-text-link">View project</span>
+        </div>
+      </div>
+      <div class="project" id="project-four" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart">
+        <a href="/marketing-landing-page" class="project-link"><span></span></a>
+        <div class="project-text">
+          <span class="project-name">OneTrust</span>
+          <h3 class="project-title">Marketing Landing Page</h3>
+          <span class="text-link project-text-link">View project</span>
+        </div>
+      </div>
+      <div class="project" id="project-five" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
+        <a href="/cookie-banner-wizard" class="project-link"><span></span></a>
+        <div class="project-text">
+          <span class="project-name">OneTrust</span>
+          <h3 class="project-title">Cookie Banner Wizard</h3>
+          <span class="text-link project-text-link">View project</span>
+        </div>
+      </div>
+      <div class="project project-placeholder" id="project-six" data-aos="slide-up" data-aos-duration="1500" data-aos-easing="ease-out-quart">
+        <div class="project-text">
+          <span class="project-name">OneTrust</span>
+          <h3 class="project-title">Cookie Banner Gallery</h3>
+          <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
+        </div>
+      </div>
+      <!-- <div class="project project-placeholder" id="project-four" data-aos="slide-up" data-aos-duration="500" data-aos-easing="ease-out-quart">
+        <div class="project-text">
+          <span class="project-name">Konquer Jiu Jitsu</span>
+          <h3 class="project-title">E-Commerce Site</h3>
+          <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
+        </div>
+      </div>
+      <div class="project project-placeholder" id="project-five" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-out-quart">
+        <div class="project-text">
+          <span class="project-name">Ballad</span>
+          <h3 class="project-title">Web & Mobile App</h3>
+          <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
+        </div>
+      </div>
+      <div class="project project-placeholder" id="project-six" data-aos="slide-up" data-aos-duration="1500" data-aos-easing="ease-out-quart">
+        <div class="project-text">
+          <span class="project-name">Oliver Pluff & Co.</span>
+          <h3 class="project-title">E-Commerce App</h3>
+          <span class="text-link project-text-link project-text-link-placeholder">Coming soon</span>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-text">
+      <h3>Get in touch</h3>
+      <p>Interested in chatting? Feel free to send me a message and I'll get back to you when I can.</p>
+      <a href="/contact" class="text-link">Contact me</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <img class="footer-logo" src="img/logos/logo-half-white.png" alt="Emily Mattison Design"></img>
+      <div class="social-media-links">
+        <a href="https://www.linkedin.com/in/egmatti/" target="_blank"><img class="social-media-link" src="img/icons/social-media-links/linkedin.svg" alt="LinkedIn"/></a>
+        <a href="https://dribbble.com/egmattison" target="_blank"><img class="social-media-link" src="img/icons/social-media-links/dribbble.svg" alt="Dribbble"/></a>
+        <a href="https://github.com/egmatti" target="_blank"><img class="social-media-link" src="img/icons/social-media-links/github.svg" alt="GitHub"/></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
