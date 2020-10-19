@@ -547,7 +547,7 @@ h6 {
   line-height: 25px;
 }
 
-p, #contact-page .contact-form div textarea, #contact-page .contact-form div input, #contact-page .contact-form div label, .project-page .project-subsection-text ol, .project-page .project-role__description, .approach ul li, .approach ol li, .project-page .comment--description, .project-page .figure-description, .project-page .mobile-mockup figcaption, .project-page .medium-width-slider-image figcaption, .project-page .project-image--medium-width figcaption {
+p, #contact-page .contact-form div textarea, #contact-page .contact-form div input, #contact-page .contact-form div label, .project-page .project-subsection-text ol, .project-page .project-role__description, .approach ol li, .approach ul li, .project-page .comment--description, .project-page .figure-description, .project-page .mobile-mockup figcaption, .project-page .medium-width-slider-image figcaption, .project-page .project-image--medium-width figcaption {
   color: #484848;
   font-family: "Metropolis Regular", Helvetica, sans-serif;
   font-size: 20px;
@@ -685,7 +685,7 @@ a:hover {
   -ms-grid-column-span: 4;
   grid-column: 3/7;
   display: block;
-  height: 450px;
+  max-height: 450px;
   overflow: auto;
 }
 .project-page .medium-width-slider-image img {
@@ -948,7 +948,7 @@ a:hover {
   overflow: hidden;
   text-transform: uppercase;
 }
-.job-story p, .job-story #contact-page .contact-form div textarea, #contact-page .contact-form div .job-story textarea, .job-story #contact-page .contact-form div input, #contact-page .contact-form div .job-story input, .job-story #contact-page .contact-form div label, #contact-page .contact-form div .job-story label, .job-story .project-page .project-subsection-text ol, .project-page .project-subsection-text .job-story ol, .job-story .project-page .project-role__description, .project-page .job-story .project-role__description, .job-story .approach ul li, .approach ul .job-story li, .job-story .approach ol li, .approach ol .job-story li, .job-story .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width .job-story figcaption, .job-story .project-page .medium-width-slider-image figcaption, .project-page .medium-width-slider-image .job-story figcaption, .job-story .project-page .mobile-mockup figcaption, .project-page .mobile-mockup .job-story figcaption, .job-story .project-page .figure-description, .project-page .job-story .figure-description, .job-story .project-page .comment--description, .project-page .job-story .comment--description {
+.job-story p, .job-story #contact-page .contact-form div textarea, #contact-page .contact-form div .job-story textarea, .job-story #contact-page .contact-form div input, #contact-page .contact-form div .job-story input, .job-story #contact-page .contact-form div label, #contact-page .contact-form div .job-story label, .job-story .project-page .project-subsection-text ol, .project-page .project-subsection-text .job-story ol, .job-story .project-page .project-role__description, .project-page .job-story .project-role__description, .job-story .approach ol li, .approach ol .job-story li, .job-story .approach ul li, .approach ul .job-story li, .job-story .project-page .project-image--medium-width figcaption, .project-page .project-image--medium-width .job-story figcaption, .job-story .project-page .medium-width-slider-image figcaption, .project-page .medium-width-slider-image .job-story figcaption, .job-story .project-page .mobile-mockup figcaption, .project-page .mobile-mockup .job-story figcaption, .job-story .project-page .figure-description, .project-page .job-story .figure-description, .job-story .project-page .comment--description, .project-page .job-story .comment--description {
   font-size: 14px;
   line-height: 17.5px;
 }
@@ -966,17 +966,17 @@ a:hover {
   overflow: hidden;
   text-transform: uppercase;
 }
-.approach ul li, .approach ol li {
+.approach ul li {
   font-size: 14px;
   list-style: none;
   margin: 0 0 0 1.5em;
   padding-bottom: 4.85px;
   position: relative;
 }
-.approach ul li:last-of-type, .approach ol li:last-of-type {
+.approach ul li:last-of-type {
   padding-bottom: 0;
 }
-.approach ul li:before, .approach ol li:before {
+.approach ul li:before {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -989,11 +989,42 @@ a:hover {
   top: -4.75px;
   width: 2em;
 }
-.approach ul li ul li:first-of-type, .approach ul li ol li:first-of-type, .approach ol li ul li:first-of-type, .approach ol li ol li:first-of-type {
+.approach ul li ul li:first-of-type {
   padding-top: 4.85px;
 }
-.approach ul li ul li:before, .approach ul li ol li:before, .approach ol li ul li:before, .approach ol li ol li:before {
+.approach ul li ul li:before {
   content: "-";
+  position: absolute;
+  top: 0;
+}
+.approach ol li {
+  font-size: 14px;
+  list-style: none;
+  margin: 0 0 0 1.5em;
+  padding-bottom: 4.85px;
+  position: relative;
+}
+.approach ol li:last-of-type {
+  padding-bottom: 0;
+}
+.approach ol li:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: attr(seq) ".";
+  font-family: "Metropolis Bold", Helvetica, sans-serif;
+  left: -2em;
+  margin-right: 10px;
+  padding: 4px;
+  position: absolute;
+  text-align: center;
+  top: -4.75px;
+  width: 2em;
+}
+.approach ol li ul li:before {
+  content: "-";
+  font-family: "Metropolis Regular", Helvetica, sans-serif;
+  padding-top: 4.85px;
 }
 
 .column--concept-model {

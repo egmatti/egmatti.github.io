@@ -65,7 +65,7 @@
     @include flexbox($align: center, $justify: center);
     @include grid-child(3,7);
     display: block;
-    height: 450px;
+    max-height: 450px;
     overflow: auto;
 
   }
@@ -356,7 +356,7 @@
     text-transform: uppercase;
   }
 
-  ul li, ol li {
+  ul li {
     @extend p;
     font-size: 14px;
     list-style: none;
@@ -382,14 +382,50 @@
       width: 2em;
     }
 
-    ul li, ol li {
+    ul li {
       &:first-of-type {
         padding-top: 4.85px;
       }
 
       &:before {
         content:'-';
+        position: absolute;
+        top: 0;
       }
+    }
+  }
+
+  ol li {
+    @extend p;
+    font-size: 14px;
+    list-style: none;
+    margin: 0 0 0 1.5em;
+    padding-bottom: 4.85px;
+    position: relative;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+
+    &:before {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      content: attr(seq)".";
+      font-family: $font-bold;
+      left: -2em;
+      margin-right: 10px;
+      padding: 4px;
+      position: absolute;
+      text-align:center;
+      top: -4.75px;
+      width: 2em;
+    }
+
+    ul li:before {
+      content:'-';
+      font-family: $font-regular;
+      padding-top: 4.85px;
     }
   }
 }
