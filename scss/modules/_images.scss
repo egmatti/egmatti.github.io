@@ -382,16 +382,9 @@
       width: 2em;
     }
 
-    ul li {
-      &:first-of-type {
-        padding-top: 4.85px;
-      }
-
-      &:before {
-        content:'-';
-        position: absolute;
-        top: 0;
-      }
+    ul li:before {
+      content:'-';
+      padding-top: 4.85px;
     }
   }
 

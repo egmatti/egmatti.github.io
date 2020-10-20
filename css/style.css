@@ -989,13 +989,9 @@ a:hover {
   top: -4.75px;
   width: 2em;
 }
-.approach ul li ul li:first-of-type {
-  padding-top: 4.85px;
-}
 .approach ul li ul li:before {
   content: "-";
-  position: absolute;
-  top: 0;
+  padding-top: 4.85px;
 }
 .approach ol li {
   font-size: 14px;
